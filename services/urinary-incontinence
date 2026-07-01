@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>頻尿、尿失禁治療｜葉建麟醫師</title>
+<meta name="description" content="婦女泌尿次專科訓練背景，提供頻尿、急迫性尿失禁、應力性尿失禁等診治。">
+<style>
+  :root{
+    --navy:#13294b;
+    --blue:#1d4e89;
+    --blue-light:#5b8fc7;
+    --bg-soft:#f4f7fb;
+    --text:#22303f;
+    --text-soft:#5a6b7d;
+    --gold:#b08d57;
+    --white:#ffffff;
+    --line-green:#06c755;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--text);
+    line-height:1.75;
+    background:var(--white);
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .container{max-width:1080px;margin:0 auto;padding:0 24px;}
+  section{padding:96px 0;}
+  h1,h2,h3{font-weight:700;letter-spacing:.02em;}
+  .eyebrow{
+    font-size:.85rem;letter-spacing:.18em;color:var(--gold);
+    text-transform:uppercase;margin-bottom:14px;font-weight:600;
+  }
+
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,.96);
+    border-bottom:1px solid #e7ecf2;
+    backdrop-filter:blur(6px);
+  }
+  .navwrap{
+    display:flex;align-items:center;justify-content:space-between;
+    height:76px;
+  }
+  .brand{font-size:1.15rem;font-weight:700;color:var(--navy);letter-spacing:.05em;}
+  .brand span{color:var(--blue-light);font-weight:400;font-size:.85rem;margin-left:8px;}
+  nav ul{display:flex;gap:36px;list-style:none;}
+  nav a{font-size:.95rem;color:var(--text);font-weight:500;}
+  nav a:hover{color:var(--blue);}
+  .nav-cta{
+    background:var(--line-green);color:#fff;padding:10px 22px;
+    border-radius:30px;font-weight:600;font-size:.9rem;
+  }
+  .nav-toggle{display:none;}
+  @media(max-width:860px){
+    nav ul{display:none;}
+    .nav-toggle{display:block;font-size:1.6rem;background:none;border:none;color:var(--navy);}
+  }
+
+  .crumb{
+    padding-top:150px;padding-bottom:0;background:linear-gradient(135deg,var(--bg-soft) 0%,#eaf1f8 100%);
+  }
+  .crumb-row{font-size:.85rem;color:var(--text-soft);margin-bottom:18px;}
+  .crumb-row a{color:var(--blue);font-weight:600;}
+  .crumb-row a:hover{text-decoration:underline;}
+  .detail-hero{
+    background:linear-gradient(135deg,var(--bg-soft) 0%,#eaf1f8 100%);
+    padding-bottom:70px;
+  }
+  .detail-hero .service-num{
+    font-size:.85rem;font-weight:700;color:var(--gold);letter-spacing:.12em;margin-bottom:14px;display:block;
+  }
+  .detail-hero h1{font-size:2.2rem;color:var(--navy);line-height:1.4;margin-bottom:18px;}
+  .detail-hero .lead{font-size:1.05rem;color:var(--text-soft);max-width:620px;}
+
+  .detail-body{background:var(--white);}
+  .detail-grid{display:grid;grid-template-columns:1.5fr .9fr;gap:60px;align-items:start;}
+  .detail-block{margin-bottom:38px;}
+  .detail-block:last-child{margin-bottom:0;}
+  .detail-block h2{font-size:1.3rem;color:var(--navy);margin-bottom:16px;padding-left:16px;border-left:4px solid var(--gold);}
+  .detail-block p{color:var(--text-soft);margin-bottom:14px;}
+  .detail-block ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .detail-block ul li{padding-left:22px;position:relative;color:var(--text-soft);font-size:.97rem;}
+  .detail-block ul li::before{
+    content:"";position:absolute;left:0;top:9px;width:8px;height:8px;
+    background:var(--gold);border-radius:50%;
+  }
+
+  .side-card{
+    background:var(--bg-soft);border:1px solid #e2e9f1;border-radius:14px;padding:30px;
+    position:sticky;top:100px;
+  }
+  .side-card h3{color:var(--navy);font-size:1.1rem;margin-bottom:16px;}
+  .side-card .btn{width:100%;text-align:center;margin-bottom:12px;}
+  .side-card .mini-note{font-size:.82rem;color:var(--text-soft);margin-top:16px;line-height:1.6;}
+
+  .btn{
+    display:inline-block;padding:14px 30px;border-radius:8px;font-weight:600;
+    font-size:.95rem;transition:.2s;
+  }
+  .btn-primary{background:var(--navy);color:#fff;}
+  .btn-primary:hover{background:var(--blue);}
+  .btn-outline{border:1.5px solid var(--navy);color:var(--navy);}
+  .btn-outline:hover{background:var(--navy);color:#fff;}
+
+  .related{background:var(--bg-soft);}
+  .related h2{font-size:1.5rem;color:var(--navy);margin-bottom:30px;text-align:center;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .related-card{
+    background:#fff;border:1px solid #e7ecf2;border-radius:12px;padding:24px 22px;transition:.25s;
+  }
+  .related-card:hover{border-color:var(--blue-light);transform:translateY(-4px);box-shadow:0 18px 35px -18px rgba(19,41,75,.3);}
+  .related-card h4{color:var(--navy);font-size:1rem;margin-bottom:8px;}
+  .related-card p{color:var(--text-soft);font-size:.85rem;}
+  @media(max-width:860px){.related-grid{grid-template-columns:1fr;} .detail-grid{grid-template-columns:1fr;} .side-card{position:static;}}
+
+  .contact{
+    background:var(--navy);color:#fff;text-align:center;
+  }
+  .contact h2{font-size:2rem;margin-bottom:18px;}
+  .contact p{color:#c9d4e3;max-width:520px;margin:0 auto 36px;}
+  .line-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--line-green);color:#fff;padding:16px 38px;border-radius:40px;
+    font-weight:700;font-size:1.05rem;
+  }
+  .line-btn:hover{background:#05b34c;}
+
+  footer{background:#0d1d33;color:#9fb0c4;padding:50px 0 30px;font-size:.85rem;}
+  .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:30px;}
+  footer h4{color:#fff;font-size:1rem;margin-bottom:10px;}
+  .foot-bottom{
+    border-top:1px solid #243a56;padding-top:22px;text-align:center;color:#6f85a0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container navwrap">
+    <a href="../index.html" class="brand">葉建麟 醫師<span>Jian-Lin Yeh, M.D.</span></a>
+    <nav>
+      <ul>
+        <li><a href="../index.html#about">關於醫師</a></li>
+        <li><a href="../index.html#services">專長治療</a></li>
+        <li><a href="../index.html#schedule">看診時段</a></li>
+        <li><a href="../index.html#contact">聯絡諮詢</a></li>
+      </ul>
+    </nav>
+    <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank" rel="noopener">LINE 預約諮詢</a>
+  </div>
+</header>
+
+<section class="crumb detail-hero">
+  <div class="container">
+    <div class="crumb-row"><a href="../index.html">首頁</a> ／ <a href="../index.html#services">專長治療</a> ／ 頻尿、尿失禁治療</div>
+    <span class="service-num">04</span>
+    <h1>頻尿、尿失禁治療</h1>
+    <p class="lead">婦女泌尿次專科訓練背景，提供頻尿、急迫性尿失禁、應力性尿失禁等診治。</p>
+  </div>
+</section>
+
+<section class="detail-body">
+  <div class="container">
+    <div class="detail-grid">
+      <div>
+        
+            <div class="detail-block">
+              <h2>尿失禁的常見類型</h2>
+              <p>婦女泌尿常見的問題包括應力性尿失禁（咳嗽、大笑、運動時漏尿）、急迫性尿失禁（尿意強烈、來不及如廁即漏尿），以及合併兩者的混合型尿失禁；此外也涵蓋夜尿、頻尿等排尿障礙。這些症狀常與骨盆底肌肉鬆弛、膀胱過動症、停經後荷爾蒙變化等因素有關，需透過完整評估找出主要病因。</p>
+            </div>
+            <div class="detail-block">
+              <h2>診治方式</h2>
+              <ul>
+                <li>詳細病史詢問，並視需要安排尿路動力學等相關檢查</li>
+                <li>提供清楚的治療選項說明與預期效果，協助患者做出合適的選擇</li>
+              </ul>
+            </div>
+            <div class="detail-block">
+              <h2>適合對象</h2>
+              <p>長期受頻尿、夜尿、漏尿困擾，且已影響日常生活品質者，建議盡早至門診諮詢評估，及早找出原因並接受合適治療。</p>
+            </div>
+            <div class="detail-block">
+              <h2>治療方式</h2>
+              <p style="color:var(--navy);font-weight:600;margin-bottom:10px;">一、急迫性尿失禁</p>
+              <ul>
+                <li>生活型態調整：如減少咖啡、茶等含咖啡因飲品的攝取</li>
+                <li>藥物治療：目前常用藥物有 Mirabegron、Solifenacin、Detrusitol。Mirabegron 為較新藥物，副作用較少；另兩種藥物則較常出現口乾舌燥的副作用。皆為一天一顆，建議持續服用半年</li>
+                <li>手術：極少數患者需要，僅在藥物治療完全無效時，才會考慮膀胱擴大手術</li>
+              </ul>
+              <p style="color:var(--navy);font-weight:600;margin:22px 0 10px;">二、應力性尿失禁</p>
+              <ul>
+                <li>骨盆底肌肉訓練：如凱格爾運動，建議持續至少六週並長期維持，才能看到效果</li>
+                <li>磁波椅：適合症狀較輕微者，藉由儀器輔助訓練骨盆底肌，建議一週兩次、共六次療程，屬自費項目</li>
+                <li>陰道雷射：適合症狀較輕微者，建議一個月一次、共三次療程，屬自費項目；若有投保門診手術險，部分情況可能可獲理賠</li>
+                <li>手術：症狀較嚴重者建議採尿道中段懸吊手術，於陰道內切開約1公分傷口，將吊帶置入尿道中段下方
+                  <ul style="margin-top:10px;">
+                    <li>健保給付吊帶：會多兩處會陰傷口，術後大腿較易痠痛</li>
+                    <li>自費吊帶（約3-4萬元）：僅有陰道內傷口，且可於術後門診調整吊帶鬆緊度</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+      </div>
+      <aside class="side-card">
+        <h3>預約諮詢</h3>
+        <a href="https://lin.ee/nmSll8Y" class="btn btn-primary" target="_blank" rel="noopener">LINE 線上預約</a>
+        <a href="../index.html#schedule" class="btn btn-outline">查看看診時段</a>
+        <p class="mini-note">看診地點：四季台安醫院、岡山高醫。實際治療方式需經醫師親自評估後安排，本頁內容僅供衛教參考。</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="related">
+  <div class="container">
+    <h2>其他專長項目</h2>
+    <div class="related-grid">
+      
+        <a href="minimally-invasive-surgery.html" class="related-card">
+          <h4>婦科微創手術（單孔腹腔鏡）</h4>
+          <p>以微創方式進行婦科手術，傷口小、恢復快，降低對患者身體的負擔。</p>
+        </a>
+        <a href="fibroid-ablation.html" class="related-card">
+          <h4>子宮肌瘤・肌腺瘤微波消融手術</h4>
+          <p>針對子宮肌瘤、肌腺瘤提供微波消融治療選項，提供傳統手術以外的選擇。</p>
+        </a>
+        <a href="uterine-prolapse.html" class="related-card">
+          <h4>子宮膀胱脫垂手術</h4>
+          <p>評估骨盆器官脫垂程度，提供合適的手術或保守治療方案。</p>
+        </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>有婦科困擾，先諮詢看看。</h2>
+    <p>無論是產檢、婦科困擾或泌尿相關問題，歡迎透過 LINE 與我聯繫，安排合適的看診時間與地點。</p>
+    <a href="https://lin.ee/nmSll8Y" class="line-btn" target="_blank" rel="noopener">💬 加 LINE 諮詢預約</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>葉建麟 醫師</h4>
+        <p>婦產科專科醫師・福爾摩沙婦女泌尿專科醫師</p>
+      </div>
+      <div>
+        <h4>看診地點</h4>
+        <p>四季台安醫院　/　岡山高醫</p>
+      </div>
+      <div>
+        <h4>聯絡方式</h4>
+        <p><a href="https://lin.ee/nmSll8Y" target="_blank" rel="noopener">LINE 線上諮詢</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      本網站提供之資訊僅供衛教參考，實際診療請洽專業醫師評估。<br>
+      © 2026 葉建麟醫師．All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
