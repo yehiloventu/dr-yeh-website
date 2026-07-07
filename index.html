@@ -153,14 +153,11 @@
   }
   .service-card{
     border:1px solid #e7ecf2;border-radius:14px;padding:32px 26px;
-    transition:.25s;background:#fff;display:block;
+    transition:.25s;background:#fff;
   }
   .service-card:hover{
     border-color:var(--blue-light);transform:translateY(-4px);
     box-shadow:0 18px 35px -18px rgba(19,41,75,.3);
-  }
-  .service-card .more{
-    display:inline-block;margin-top:14px;font-size:.85rem;color:var(--blue);font-weight:600;
   }
   .service-num{
     font-size:.8rem;font-weight:700;color:var(--gold);letter-spacing:.1em;
@@ -227,8 +224,9 @@
         <li><a href="#about">關於醫師</a></li>
         <li><a href="#services">專長治療</a></li>
         <li><a href="#schedule">看診時段</a></li>
-        <li><a href="education.html">衛教專欄</a></li>
+        <li><a href="education/">衛教專欄</a></li>
         <li><a href="cases.html">案例分享</a></li>
+        <li><a href="#contact">聯絡諮詢</a></li>
       </ul>
     </nav>
     <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank" rel="noopener">LINE 預約諮詢</a>
@@ -240,7 +238,7 @@
     <div>
       <div class="hero-eyebrow">婦產科專科・婦女泌尿次專科</div>
       <h1>專業判斷，<br><em>溫和而精準</em>的婦科治療。</h1>
-      <p>高雄醫學大學醫學系畢業，於高雄醫學大學附設醫院婦產部完成完整訓練，現任四季台安醫院、岡山高醫婦產科主治醫師。專長婦科微創手術、子宮肌(腺)瘤消融治療與婦女泌尿相關疾病的照護，提供每一位患者清楚的說明與謹慎的治療選擇。</p>
+      <p>高雄醫學大學醫學系畢業，於高雄醫學大學附設醫院婦產部完成完整訓練，現任四季台安醫院、岡山高醫婦產科主治醫師。專長婦科微創手術、子宮肌瘤消融治療與婦女泌尿照護，提供每一位患者清楚的說明與謹慎的治療選擇。</p>
       <div class="btn-row">
         <a href="https://lin.ee/nmSll8Y" class="btn btn-primary" target="_blank" rel="noopener">LINE 線上預約</a>
         <a href="#schedule" class="btn btn-outline">查看看診時段</a>
@@ -344,42 +342,36 @@
       <p>從一般產檢到婦科次專科治療，依患者狀況提供完整評估與治療規劃。</p>
     </div>
     <div class="service-grid">
-      <a href="services/minimally-invasive-surgery.html" class="service-card">
+      <div class="service-card">
         <span class="service-num">01</span>
         <h3>婦科微創手術（單孔腹腔鏡）</h3>
         <p>以微創方式進行婦科手術，傷口小、恢復快，降低對患者身體的負擔。</p>
-        <span class="more">了解詳情 →</span>
-      </a>
-      <a href="services/fibroid-ablation.html" class="service-card">
+      </div>
+      <div class="service-card">
         <span class="service-num">02</span>
         <h3>子宮肌瘤・肌腺瘤微波消融手術</h3>
         <p>針對子宮肌瘤、肌腺瘤提供微波消融治療選項，提供傳統手術以外的選擇。</p>
-        <span class="more">了解詳情 →</span>
-      </a>
-      <a href="services/uterine-prolapse.html" class="service-card">
+      </div>
+      <div class="service-card">
         <span class="service-num">03</span>
         <h3>子宮膀胱脫垂手術</h3>
         <p>評估骨盆器官脫垂程度，提供合適的手術或保守治療方案。</p>
-        <span class="more">了解詳情 →</span>
-      </a>
-      <a href="services/urinary-incontinence.html" class="service-card">
+      </div>
+      <div class="service-card">
         <span class="service-num">04</span>
         <h3>頻尿、尿失禁治療</h3>
         <p>婦女泌尿次專科訓練背景，提供頻尿、急迫性尿失禁、應力性尿失禁等診治。</p>
-        <span class="more">了解詳情 →</span>
-      </a>
-      <a href="services/hysteroscopy.html" class="service-card">
+      </div>
+      <div class="service-card">
         <span class="service-num">05</span>
         <h3>子宮鏡冷刀手術</h3>
         <p>以子宮鏡冷刀技術處理子宮內病灶，減少熱能對子宮內膜的傷害。</p>
-        <span class="more">了解詳情 →</span>
-      </a>
-      <a href="services/prenatal-care.html" class="service-card">
+      </div>
+      <div class="service-card">
         <span class="service-num">06</span>
         <h3>產檢</h3>
         <p>提供完整孕期產檢服務，陪伴孕媽咪掌握每個孕期階段的狀況。</p>
-        <span class="more">了解詳情 →</span>
-      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -420,7 +412,7 @@
 
 <section id="contact" class="contact">
   <div class="container">
-    <h2>有婦科困擾，我們聆聽您的聲音。</h2>
+    <h2>有婦科困擾，先諮詢看看。</h2>
     <p>無論是產檢、婦科困擾或泌尿相關問題，歡迎透過 LINE 與我聯繫，安排合適的看診時間與地點。</p>
     <a href="https://lin.ee/nmSll8Y" class="line-btn" target="_blank" rel="noopener">💬 加 LINE 諮詢預約</a>
   </div>
