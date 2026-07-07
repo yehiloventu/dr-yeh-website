@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大腿中間夾顆球？原來可能是骨盆器官脫垂！｜葉建麟醫師衛教專欄</title>
+<meta name="description" content="骨盆腔器官脫垂是指子宮、膀胱或直腸因骨盆底支撐結構鬆弛，向下移位甚至脫出陰道口外。葉建麟醫師說明成因、症狀與治療方式。">
+<style>
+  :root{
+    --navy:#13294b;
+    --blue:#1d4e89;
+    --blue-light:#5b8fc7;
+    --bg-soft:#f4f7fb;
+    --text:#22303f;
+    --text-soft:#5a6b7d;
+    --gold:#b08d57;
+    --white:#ffffff;
+    --line-green:#06c755;
+    --rose:#c9636a;
+    --rose-light:#fdf2f3;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--text);line-height:1.85;background:var(--white);
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  /* Nav */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,.96);border-bottom:1px solid #e7ecf2;
+    backdrop-filter:blur(6px);
+  }
+  .navwrap{
+    max-width:1080px;margin:0 auto;padding:0 24px;
+    display:flex;align-items:center;justify-content:space-between;height:72px;
+  }
+  .brand{font-size:1.05rem;font-weight:700;color:var(--navy);}
+  .brand small{color:var(--text-soft);font-weight:400;font-size:.8rem;margin-left:8px;}
+  .nav-links{display:flex;gap:30px;list-style:none;}
+  .nav-links a{font-size:.9rem;color:var(--text);font-weight:500;}
+  .nav-links a:hover{color:var(--blue);}
+  .nav-cta{
+    background:var(--line-green);color:#fff;padding:9px 20px;
+    border-radius:30px;font-weight:600;font-size:.85rem;
+  }
+  @media(max-width:700px){.nav-links{display:none;}}
+
+  /* Hero / Cover */
+  .article-hero{
+    padding-top:72px;
+    background:linear-gradient(180deg,#fdf6f0 0%,var(--white) 100%);
+  }
+  .article-hero .cover-wrap{
+    max-width:480px;margin:0 auto;padding:40px 24px 0;
+  }
+  .article-hero img{
+    width:100%;border-radius:20px;
+    box-shadow:0 24px 50px -16px rgba(100,40,40,.25);
+  }
+
+  /* Meta bar */
+  .meta-bar{
+    padding:28px 0 0;
+    border-bottom:1px solid #edf1f6;
+    margin-bottom:0;
+  }
+  .meta-bar .container{
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-bottom:22px;
+  }
+  .tag{
+    background:var(--rose-light);color:var(--rose);
+    font-size:.78rem;font-weight:700;padding:5px 12px;border-radius:20px;
+    letter-spacing:.06em;
+  }
+  .meta-date{color:var(--text-soft);font-size:.83rem;}
+  .meta-author{
+    display:flex;align-items:center;gap:8px;margin-left:auto;
+    color:var(--text-soft);font-size:.83rem;
+  }
+  .meta-author strong{color:var(--navy);}
+
+  /* Article body */
+  article{padding:52px 0 80px;}
+
+  .article-title{
+    font-size:2rem;color:var(--navy);line-height:1.45;margin-bottom:10px;
+    font-weight:800;
+  }
+  .article-subtitle{
+    font-size:1.1rem;color:var(--text-soft);margin-bottom:40px;
+    padding-bottom:32px;border-bottom:2px solid #edf1f6;
+  }
+  .article-intro{
+    background:var(--bg-soft);border-left:4px solid var(--blue);
+    padding:22px 26px;border-radius:0 12px 12px 0;margin-bottom:44px;
+    font-size:1.02rem;color:var(--text);line-height:1.9;
+  }
+
+  /* Section headings */
+  .sec{margin-bottom:52px;}
+  .sec-label{
+    display:inline-block;background:var(--navy);color:#fff;
+    font-size:.78rem;font-weight:700;padding:4px 12px;border-radius:4px;
+    letter-spacing:.1em;margin-bottom:16px;
+  }
+  .sec h2{
+    font-size:1.4rem;color:var(--navy);margin-bottom:18px;
+    padding-bottom:12px;border-bottom:2px solid #edf1f6;
+  }
+  .sec p{color:var(--text);margin-bottom:14px;font-size:1rem;}
+
+  /* Lists */
+  .cause-list,.risk-list,.note-list{
+    list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:18px;
+  }
+  .cause-list li,.risk-list li{
+    display:flex;gap:14px;align-items:flex-start;
+    background:#fff;border:1px solid #e8edf4;border-radius:10px;
+    padding:16px 18px;
+  }
+  .cause-list .icon,.risk-list .icon{
+    font-size:1.4rem;flex-shrink:0;margin-top:2px;
+  }
+  .cause-list .title,.risk-list .title{
+    font-weight:700;color:var(--navy);display:block;margin-bottom:4px;
+  }
+  .cause-list .desc,.risk-list .desc{
+    color:var(--text-soft);font-size:.93rem;
+  }
+  .note-list li{
+    padding-left:22px;position:relative;color:var(--text);font-size:.97rem;
+  }
+  .note-list li::before{
+    content:"";position:absolute;left:0;top:10px;
+    width:8px;height:8px;background:var(--gold);border-radius:50%;
+  }
+
+  /* Symptom cards */
+  .symptom-alert{
+    background:#fff8e1;border:1.5px solid #f7c948;border-radius:12px;
+    padding:18px 22px;margin-bottom:28px;font-size:.97rem;color:#7a5c00;
+    display:flex;gap:12px;align-items:flex-start;
+  }
+  .symptom-alert .alert-icon{font-size:1.4rem;flex-shrink:0;}
+  .symptom-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+  .symptom-card{
+    background:#fff;border:1px solid #e8edf4;border-radius:12px;
+    padding:20px;
+  }
+  .symptom-card h4{
+    color:var(--navy);font-size:.95rem;margin-bottom:10px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .symptom-card ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+  .symptom-card li{
+    font-size:.88rem;color:var(--text-soft);padding-left:14px;position:relative;
+  }
+  .symptom-card li::before{
+    content:"·";position:absolute;left:0;color:var(--blue);font-weight:700;
+  }
+  @media(max-width:560px){.symptom-grid{grid-template-columns:1fr;}}
+
+  /* Treatment */
+  .treatment-block{
+    background:var(--bg-soft);border-radius:14px;padding:28px;margin-bottom:24px;
+  }
+  .treatment-block h3{
+    color:var(--navy);font-size:1.1rem;margin-bottom:16px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .treatment-block h4{
+    color:var(--blue);font-size:.95rem;font-weight:700;margin:18px 0 8px;
+  }
+  .treatment-block p{color:var(--text);font-size:.95rem;margin-bottom:10px;}
+  .doctor-note{
+    background:var(--navy);color:#fff;border-radius:10px;
+    padding:16px 20px;margin:14px 0;font-size:.92rem;line-height:1.75;
+  }
+  .doctor-note strong{color:#8fc7f0;}
+
+  /* Image placeholder */
+  .img-placeholder{
+    background:#f0f4f8;border:1.5px dashed #c0cedd;border-radius:12px;
+    padding:36px 20px;text-align:center;color:var(--text-soft);
+    font-size:.88rem;margin:20px 0;
+  }
+  .img-placeholder .img-label{
+    font-weight:700;color:var(--navy);display:block;margin-bottom:6px;
+  }
+
+  /* Notes / Warning */
+  .warning-box{
+    background:var(--rose-light);border:1.5px solid #e8aaad;
+    border-radius:12px;padding:20px 24px;margin:28px 0;
+  }
+  .warning-box h4{color:var(--rose);font-weight:700;margin-bottom:12px;}
+
+  /* Final CTA */
+  .cta-block{
+    background:var(--navy);color:#fff;border-radius:20px;
+    padding:48px 36px;text-align:center;margin-top:60px;
+  }
+  .cta-block h3{font-size:1.5rem;margin-bottom:14px;}
+  .cta-block p{color:#c9d4e3;margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto;}
+  .line-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--line-green);color:#fff;padding:15px 36px;border-radius:40px;
+    font-weight:700;font-size:1rem;
+  }
+  .line-btn:hover{background:#05b34c;}
+
+  /* Breadcrumb */
+  .breadcrumb{padding:90px 0 0;}
+  .breadcrumb .container{display:flex;gap:8px;align-items:center;font-size:.83rem;color:var(--text-soft);}
+  .breadcrumb a{color:var(--blue);}
+  .breadcrumb span{color:#ccc;}
+
+  /* Footer */
+  footer{background:#0d1d33;color:#9fb0c4;padding:44px 0 28px;font-size:.84rem;margin-top:0;}
+  .foot-inner{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .foot-bottom{border-top:1px solid #243a56;padding-top:20px;margin-top:28px;text-align:center;color:#6f85a0;}
+
+  /* Article figures */
+  .article-fig{
+    margin:28px 0 36px;
+    border-radius:14px;overflow:hidden;
+    background:var(--bg-soft);
+    border:1px solid #e2e9f1;
+  }
+  .article-fig img{
+    width:100%;height:auto;display:block;
+  }
+  .article-fig figcaption{
+    padding:12px 18px;font-size:.82rem;color:var(--text-soft);
+    text-align:center;border-top:1px solid #e2e9f1;
+    background:#fff;
+  }
+
+  /* Back to list */
+  .back-link{
+    display:inline-flex;align-items:center;gap:6px;
+    color:var(--blue);font-size:.9rem;font-weight:600;margin-top:36px;
+  }
+  .back-link:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navwrap">
+    <div class="brand">葉建麟 醫師<small>婦產科・婦女泌尿</small></div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">關於醫師</a></li>
+      <li><a href="../index.html#services">專長治療</a></li>
+      <li><a href="../index.html#schedule">看診時段</a></li>
+      <li><a href="index.html">衛教專欄</a></li>
+    </ul>
+    <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank">LINE 預約諮詢</a>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="container">
+    <a href="../index.html">首頁</a>
+    <span>›</span>
+    <a href="index.html">衛教專欄</a>
+    <span>›</span>
+    <span>骨盆器官脫垂</span>
+  </div>
+</div>
+
+<!-- Cover Image -->
+<div class="article-hero">
+  <div class="cover-wrap">
+    <img src="cover-prolapse.png" alt="大腿中間夾顆球？原來可能是骨盆器官脫垂！">
+  </div>
+</div>
+
+<!-- Meta -->
+<div class="meta-bar">
+  <div class="container">
+    <span class="tag">婦女泌尿</span>
+    <span class="tag">骨盆底</span>
+    <span class="meta-date">2026年</span>
+    <div class="meta-author">
+      <strong>葉建麟 醫師</strong>
+      <span>撰文</span>
+    </div>
+  </div>
+</div>
+
+<article>
+<div class="container">
+
+  <h1 class="article-title">大腿中間夾顆球？<br>原來可能是骨盆器官脫垂！</h1>
+  <p class="article-subtitle">子宮、膀胱、直腸脫垂——許多女性有，卻不知道可以治療。</p>
+
+  <div class="article-intro">
+    骨盆腔器官脫垂是指骨盆底的支撐結構（肌肉、韌帶、筋膜）因各種原因發生鬆弛或損傷，導致子宮、膀胱或直腸從正常位置向下移位，甚至脫出陰道口外。這是許多女性，尤其是中年以後常見卻常被忽略的婦科問題。
+  </div>
+
+  <figure class="article-fig">
+    <img src="fig-mesh.png" alt="骨盆腔器官脫垂三種類型示意圖：子宮脫垂、膀胱脫垂、直腸脫垂">
+    <figcaption>骨盆腔器官脫垂的三種類型：子宮脫垂、膀胱脫垂（前壁脫垂）、直腸脫垂（後壁脫垂）</figcaption>
+  </figure>
+
+  <!-- 一、成因 -->
+  <div class="sec">
+    <span class="sec-label">一</span>
+    <h2>為什麼會脫垂？——成因</h2>
+    <p>骨盆底的支撐結構長期承受壓力或受到損傷，是脫垂發生的根本原因：</p>
+    <ul class="cause-list">
+      <li>
+        <span class="icon">🤱</span>
+        <div>
+          <span class="title">分娩傷害</span>
+          <span class="desc">陰道生產時骨盆底肌肉、筋膜及神經受到拉扯或撕裂，是最主要的成因。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">⬇️</span>
+        <div>
+          <span class="title">長期腹壓增加</span>
+          <span class="desc">慢性咳嗽、長期便秘、重複搬重物，使骨盆底持續承受向下的壓力。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">🔻</span>
+        <div>
+          <span class="title">停經後荷爾蒙變化</span>
+          <span class="desc">雌激素下降導致骨盆底組織彈性降低、萎縮，支撐力減弱。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">⏳</span>
+        <div>
+          <span class="title">老化</span>
+          <span class="desc">隨年齡增長，結締組織與肌肉自然退化，支撐力逐漸下降。</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 二、危險因子 -->
+  <div class="sec">
+    <span class="sec-label">二</span>
+    <h2>哪些人比較容易發生？——危險因子</h2>
+    <ul class="risk-list">
+      <li>
+        <span class="icon">👶</span>
+        <div>
+          <span class="title">多次陰道生產，或生產過巨嬰（體重 ≥ 4 公斤）</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">🏥</span>
+        <div>
+          <span class="title">生產時使用產鉗或真空吸引助產</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">🌸</span>
+        <div>
+          <span class="title">更年期或停經後女性</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">⚖️</span>
+        <div>
+          <span class="title">肥胖</span>
+          <span class="desc">體重過重持續加重骨盆底負擔。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">🚽</span>
+        <div>
+          <span class="title">長期慢性便秘或慢性咳嗽</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">💪</span>
+        <div>
+          <span class="title">長期需要搬重物或從事重體力勞動</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 三、症狀 -->
+  <div class="sec">
+    <span class="sec-label">三</span>
+    <h2>會有哪些感覺？——常見症狀</h2>
+
+    <div class="symptom-alert">
+      <span class="alert-icon">⏰</span>
+      <div>脫垂症狀因嚴重程度不同而有所差異，早期可能毫無感覺，隨脫垂加重才逐漸出現。<br>
+      <strong>這些症狀通常早上剛睡醒比較輕微，白天越站越久會越來越嚴重！</strong></div>
+    </div>
+
+    <div class="symptom-grid">
+      <div class="symptom-card">
+        <h4>🫧 局部感受</h4>
+        <ul>
+          <li>陰道口有異物感、墜脹感</li>
+          <li>有時可摸到或看到組織突出</li>
+          <li>久站、運動或排便後明顯加重</li>
+          <li>平躺休息後症狀改善</li>
+        </ul>
+      </div>
+      <div class="symptom-card">
+        <h4>💧 泌尿道症狀（膀胱脫垂）</h4>
+        <ul>
+          <li>頻尿（出口堵塞，尿不乾淨）</li>
+          <li>解尿困難、尿流細弱</li>
+          <li>甚至需要用手推回脫垂組織才能順利排尿</li>
+        </ul>
+      </div>
+      <div class="symptom-card">
+        <h4>🚽 腸道症狀（直腸脫垂）</h4>
+        <ul>
+          <li>排便困難、排便不乾淨</li>
+          <li>需要用手指協助壓迫陰道後壁才能順利排便</li>
+        </ul>
+      </div>
+      <div class="symptom-card">
+        <h4>💕 性生活影響</h4>
+        <ul>
+          <li>性行為時疼痛或不適感</li>
+          <li>部分患者因外觀改變而影響性生活意願</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 四、治療 -->
+  <div class="sec">
+    <span class="sec-label">四</span>
+    <h2>怎麼治療？</h2>
+    <p>治療方式依脫垂程度、症狀嚴重度及患者的生育需求、年齡與活動量來選擇，<strong>並非每位患者都需要手術。</strong></p>
+
+    <!-- 保守治療 -->
+    <div class="treatment-block">
+      <h3>🌿 保守治療</h3>
+
+      <h4>骨盆底肌肉訓練（凱格爾運動）</h4>
+      <p>透過持續訓練強化骨盆底肌肉，適合輕度脫垂或作為術後輔助復健，建議每日持續練習至少六週以上。</p>
+
+      <h4>子宮托（Pessary）</h4>
+      <p>將矽膠製的支撐器置入陰道內，物理性撐托脫垂的器官，適合不適合手術或暫不考慮手術的患者，需每天清洗。</p>
+
+      <h4>荷爾蒙補充</h4>
+      <p>停經後女性可局部使用雌激素陰道乳膏，改善骨盆底組織彈性，常作為手術前後的輔助治療。</p>
+    </div>
+
+    <!-- 手術治療 -->
+    <div class="treatment-block">
+      <h3>🔬 手術治療</h3>
+      <p>症狀明顯影響生活品質、保守治療效果不佳時，可考慮手術。</p>
+
+      <div class="doctor-note">
+        <strong>葉醫師提醒：</strong>葉醫師為婦女泌尿專科醫師，提供經陰道或腹腔鏡手術，可依您的個別狀況評估最適合的手術方式。
+      </div>
+
+      <h4>陰道手術</h4>
+      <p>經陰道骨盆重建，將人工網膜從陰道放到骨盆底，托住子宮與膀胱。若同時有子宮肌瘤、子宮內膜異常、子宮頸病變，可一併處理。適合年紀較大或無性生活需求的患者，優點是手術時間短（約40–50分鐘），且傷口完全藏在陰道內。</p>
+
+      <figure class="article-fig">
+        <img src="fig-vaginal.jpeg" alt="經陰道骨盆重建手術網膜位置示意圖">
+        <figcaption>經陰道骨盆重建手術：人工網膜置放位置示意圖</figcaption>
+      </figure>
+
+      <h4>腹腔鏡薦骨固定術（Sacrocolpopexy）</h4>
+      <p>將脫垂組織以網膜固定於薦骨前方，以膀胱、子宮脫垂為主，適合較年輕、有性生活需求的患者，術後復發率低、生活品質改善明顯。</p>
+
+      <figure class="article-fig">
+        <img src="fig-sacrocolpopexy.jpeg" alt="腹腔鏡薦骨固定術示意圖">
+        <figcaption>腹腔鏡薦骨固定術（Sacrocolpopexy）：以網膜將脫垂組織固定於薦骨前方示意圖</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- 注意事項 -->
+  <div class="sec">
+    <span class="sec-label">提醒</span>
+    <h2>術前術後注意事項</h2>
+    <ul class="note-list">
+      <li>手術方式的選擇需依個別狀況評估，建議與醫師充分討論</li>
+      <li>手術後避免持續搬重物，以預防脫垂復發</li>
+      <li>若有計畫再次懷孕，手術時機需特別考量</li>
+      <li>台灣目前網膜的暴露率約 2–3%，遠低於國外的 10% 以上</li>
+    </ul>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <h3>有骨盆墜脹感、異物感或排尿排便困難？</h3>
+    <p>建議盡早至門診評估，及早介入治療效果更佳。歡迎透過 LINE 與葉醫師聯繫，安排合適的看診時間。</p>
+    <a href="https://lin.ee/nmSll8Y" class="line-btn" target="_blank" rel="noopener">💬 加 LINE 諮詢預約</a>
+  </div>
+
+  <a href="index.html" class="back-link">← 回衛教專欄列表</a>
+
+</div>
+</article>
+
+<footer>
+  <div class="foot-inner">
+    <p style="margin-bottom:8px;color:#fff;font-weight:600;">葉建麟 醫師・婦女泌尿次專科</p>
+    <p>看診地點：四季台安醫院・岡山高醫　｜　<a href="https://lin.ee/nmSll8Y" style="color:#8fc7f0;" target="_blank">LINE 線上諮詢</a></p>
+    <div class="foot-bottom">
+      本文內容僅供衛教參考，實際診療請洽專業醫師評估。<br>
+      © 2026 葉建麟醫師．All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
