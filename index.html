@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -53,12 +54,39 @@
   nav a:hover{color:var(--blue);}
   .nav-cta{
     background:var(--line-green);color:#fff;padding:10px 22px;
-    border-radius:30px;font-weight:600;font-size:.9rem;
+    border-radius:30px;font-weight:600;font-size:.9rem;white-space:nowrap;
   }
-  .nav-toggle{display:none;}
+  .nav-toggle{
+    display:none;background:none;border:none;cursor:pointer;padding:8px;
+  }
+  .nav-toggle span{
+    display:block;width:24px;height:2px;background:var(--navy);
+    margin:5px 0;transition:.3s;border-radius:2px;
+  }
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .mobile-menu{
+    display:none;position:fixed;top:76px;left:0;right:0;z-index:99;
+    background:#fff;border-bottom:1px solid #e7ecf2;
+    box-shadow:0 8px 24px -8px rgba(19,41,75,.15);
+    flex-direction:column;padding:16px 24px 24px;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{
+    padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);
+    border-bottom:1px solid #f0f4f8;display:block;
+  }
+  .mobile-menu a:last-child{border-bottom:none;}
+  .mobile-menu a:hover{color:var(--blue);}
+  .mobile-line-btn{
+    margin-top:16px;background:var(--line-green);color:#fff;
+    padding:14px;border-radius:10px;text-align:center;font-weight:700;font-size:1rem;
+  }
   @media(max-width:860px){
-    nav ul{display:none;}
-    .nav-toggle{display:block;font-size:1.6rem;background:none;border:none;color:var(--navy);}
+    nav{display:none;}
+    .nav-cta{display:none;}
+    .nav-toggle{display:block;}
   }
 
   /* Hero */
@@ -230,8 +258,32 @@
       </ul>
     </nav>
     <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank" rel="noopener">LINE 預約諮詢</a>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">關於醫師</a>
+  <a href="#services" onclick="closeMobile()">專長治療</a>
+  <a href="#schedule" onclick="closeMobile()">看診時段</a>
+  <a href="education/">衛教專欄</a>
+  <a href="cases.html">案例分享</a>
+  <a href="#contact" onclick="closeMobile()">聯絡諮詢</a>
+  <a href="https://lin.ee/nmSll8Y" class="mobile-line-btn" target="_blank">💬 LINE 預約諮詢</a>
+</div>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  function closeMobile(){
+    toggle.classList.remove('open');
+    menu.classList.remove('open');
+  }
+</script>
 
 <section class="hero">
   <div class="container">
