@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>應力性尿失禁｜葉建麟醫師衛教專欄</title>
+<meta name="description" content="咳嗽、打噴嚏、大笑就漏尿？葉建麟醫師說明應力性尿失禁的成因、嚴重度分級與治療方式，包含凱格爾運動、磁波椅、陰道雷射及尿道中段懸吊手術。">
+<style>
+  :root{
+    --navy:#13294b;--blue:#1d4e89;--blue-light:#5b8fc7;
+    --bg-soft:#f4f7fb;--text:#22303f;--text-soft:#5a6b7d;
+    --gold:#b08d57;--white:#ffffff;--line-green:#06c755;
+    --rose:#c9636a;--rose-light:#fdf2f3;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--text);line-height:1.85;background:var(--white);
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  /* Nav */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,.96);border-bottom:1px solid #e7ecf2;
+    backdrop-filter:blur(6px);
+  }
+  .navwrap{
+    max-width:1080px;margin:0 auto;padding:0 24px;
+    display:flex;align-items:center;justify-content:space-between;height:72px;
+  }
+  .brand{font-size:1.05rem;font-weight:700;color:var(--navy);}
+  .brand small{color:var(--text-soft);font-weight:400;font-size:.8rem;margin-left:8px;}
+  .nav-links{display:flex;gap:28px;list-style:none;}
+  .nav-links a{font-size:.88rem;color:var(--text);font-weight:500;}
+  .nav-links a:hover{color:var(--blue);}
+  .nav-cta{
+    background:var(--line-green);color:#fff;padding:9px 20px;
+    border-radius:30px;font-weight:600;font-size:.85rem;white-space:nowrap;
+  }
+  .nav-toggle{
+    display:none;background:none;border:none;cursor:pointer;padding:8px;
+  }
+  .nav-toggle span{
+    display:block;width:22px;height:2px;background:var(--navy);
+    margin:5px 0;transition:.3s;border-radius:2px;
+  }
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .mobile-menu{
+    display:none;position:fixed;top:72px;left:0;right:0;z-index:99;
+    background:#fff;border-bottom:1px solid #e7ecf2;
+    box-shadow:0 8px 24px -8px rgba(19,41,75,.15);
+    flex-direction:column;padding:16px 24px 24px;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{
+    padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);
+    border-bottom:1px solid #f0f4f8;display:block;
+  }
+  .mobile-menu a:last-child{border-bottom:none;}
+  .mobile-line-btn{
+    margin-top:16px;background:var(--line-green);color:#fff;
+    padding:14px;border-radius:10px;text-align:center;font-weight:700;font-size:1rem;
+  }
+  @media(max-width:700px){
+    .nav-links{display:none;}
+    .nav-cta{display:none;}
+    .nav-toggle{display:block;}
+  }
+
+  /* Breadcrumb */
+  .breadcrumb{padding:90px 0 0;}
+  .breadcrumb .container{display:flex;gap:8px;align-items:center;font-size:.83rem;color:var(--text-soft);}
+  .breadcrumb a{color:var(--blue);}
+  .breadcrumb span{color:#ccc;}
+
+  /* Cover */
+  .article-hero{background:var(--bg-soft);}
+  .cover-wrap{max-width:480px;margin:0 auto;padding:32px 24px 0;}
+  .cover-wrap img{width:100%;border-radius:16px;box-shadow:0 20px 48px -12px rgba(19,41,75,.2);}
+
+  /* Meta */
+  .meta-bar{padding:24px 0 0;border-bottom:1px solid #edf1f6;}
+  .meta-bar .container{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:20px;}
+  .tag{background:var(--rose-light);color:var(--rose);font-size:.78rem;font-weight:700;padding:5px 12px;border-radius:20px;}
+  .meta-date{color:var(--text-soft);font-size:.83rem;}
+  .meta-author{display:flex;align-items:center;gap:6px;margin-left:auto;color:var(--text-soft);font-size:.83rem;}
+  .meta-author strong{color:var(--navy);}
+
+  /* Article */
+  article{padding:48px 0 80px;}
+  .article-title{font-size:1.9rem;color:var(--navy);line-height:1.45;margin-bottom:10px;font-weight:800;}
+  .article-subtitle{font-size:1.05rem;color:var(--text-soft);margin-bottom:36px;padding-bottom:28px;border-bottom:2px solid #edf1f6;}
+  .article-intro{
+    background:var(--bg-soft);border-left:4px solid var(--blue);
+    padding:20px 24px;border-radius:0 12px 12px 0;margin-bottom:44px;
+    font-size:1rem;color:var(--text);line-height:1.9;
+  }
+
+  /* Sections */
+  .sec{margin-bottom:50px;}
+  .sec-label{
+    display:inline-block;background:var(--navy);color:#fff;
+    font-size:.78rem;font-weight:700;padding:4px 12px;border-radius:4px;
+    letter-spacing:.1em;margin-bottom:14px;
+  }
+  .sec h2{font-size:1.35rem;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid #edf1f6;}
+  .sec p{color:var(--text);margin-bottom:14px;font-size:1rem;}
+
+  /* Cause list */
+  .cause-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:16px;}
+  .cause-list li{
+    display:flex;gap:14px;align-items:flex-start;
+    background:#fff;border:1px solid #e8edf4;border-radius:10px;padding:16px 18px;
+  }
+  .cause-list .icon{font-size:1.3rem;flex-shrink:0;margin-top:2px;}
+  .cause-list strong{color:var(--navy);display:block;margin-bottom:4px;font-size:.97rem;}
+  .cause-list span{color:var(--text-soft);font-size:.9rem;}
+
+  /* Risk / symptom bullet list */
+  .dot-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:16px;}
+  .dot-list li{
+    padding-left:20px;position:relative;color:var(--text);font-size:.97rem;
+  }
+  .dot-list li::before{
+    content:"";position:absolute;left:0;top:10px;
+    width:7px;height:7px;background:var(--gold);border-radius:50%;
+  }
+
+  /* Severity table */
+  .severity-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.9rem;}
+  .severity-table th{
+    background:var(--navy);color:#fff;padding:12px 14px;text-align:left;font-weight:600;
+  }
+  .severity-table td{padding:12px 14px;border-bottom:1px solid #edf1f6;vertical-align:top;}
+  .severity-table tr:nth-child(even) td{background:#f8fafc;}
+  .severity-table tr:last-child td{border-bottom:none;}
+  .badge-mild{background:#e8f5e9;color:#2e7d32;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:700;}
+  .badge-mod{background:#fff8e1;color:#f57f17;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:700;}
+  .badge-sev{background:#fce4ec;color:#c62828;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:700;}
+  .badge-vsev{background:#ede7f6;color:#4527a0;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:700;}
+  @media(max-width:560px){
+    .severity-table th,.severity-table td{padding:10px 10px;font-size:.83rem;}
+  }
+
+  /* Treatment blocks */
+  .treatment-block{
+    background:var(--bg-soft);border-radius:14px;padding:26px;margin-bottom:20px;
+    border:1px solid #dde9f4;
+  }
+  .treatment-block h3{
+    color:var(--navy);font-size:1.1rem;font-weight:700;margin-bottom:14px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .treatment-block p{color:var(--text);font-size:.95rem;margin-bottom:10px;}
+  .treatment-block ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin:10px 0;}
+  .treatment-block ul li{
+    padding-left:18px;position:relative;color:var(--text-soft);font-size:.9rem;
+  }
+  .treatment-block ul li::before{
+    content:"·";position:absolute;left:0;color:var(--blue);font-weight:700;font-size:1.2rem;line-height:1.4;
+  }
+  .fee-badge{
+    display:inline-block;background:#fff3e0;color:#e65100;
+    font-size:.76rem;font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+  }
+  .ins-badge{
+    display:inline-block;background:#e3f2fd;color:#1565c0;
+    font-size:.76rem;font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+  }
+
+  /* Comparison table */
+  .comp-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.88rem;}
+  .comp-table th{
+    background:var(--blue);color:#fff;padding:11px 14px;text-align:left;font-weight:600;
+  }
+  .comp-table th:first-child{background:var(--navy);}
+  .comp-table td{padding:11px 14px;border-bottom:1px solid #edf1f6;vertical-align:top;}
+  .comp-table tr:nth-child(even) td{background:#f8fafc;}
+  .comp-table tr:last-child td{border-bottom:none;}
+  .comp-table td:first-child{font-weight:600;color:var(--navy);background:#f4f7fb;}
+  @media(max-width:560px){
+    .comp-table th,.comp-table td{padding:9px 8px;font-size:.8rem;}
+  }
+
+  /* Note box */
+  .note-box{
+    background:#fff8e1;border:1.5px solid #f7c948;border-radius:12px;
+    padding:18px 22px;margin:20px 0;display:flex;gap:12px;align-items:flex-start;
+    font-size:.95rem;color:#7a5c00;
+  }
+  .note-box .icon{font-size:1.3rem;flex-shrink:0;}
+
+  /* After care */
+  .care-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .care-list li{display:flex;gap:12px;align-items:flex-start;font-size:.97rem;color:var(--text);}
+  .care-list .num{
+    background:var(--navy);color:#fff;width:24px;height:24px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:.75rem;font-weight:700;flex-shrink:0;margin-top:2px;
+  }
+
+  /* CTA */
+  .cta-block{
+    background:var(--navy);color:#fff;border-radius:20px;
+    padding:44px 32px;text-align:center;margin-top:56px;
+  }
+  .cta-block h3{font-size:1.45rem;margin-bottom:12px;}
+  .cta-block p{color:#c9d4e3;margin-bottom:26px;max-width:460px;margin-left:auto;margin-right:auto;}
+  .line-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--line-green);color:#fff;padding:14px 34px;border-radius:40px;
+    font-weight:700;font-size:1rem;
+  }
+  .line-btn:hover{background:#05b34c;}
+  .back-link{
+    display:inline-flex;align-items:center;gap:6px;
+    color:var(--blue);font-size:.9rem;font-weight:600;margin-top:34px;
+  }
+
+  /* Footer */
+  footer{background:#0d1d33;color:#9fb0c4;padding:44px 0 28px;font-size:.84rem;}
+  .foot-inner{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .foot-bottom{border-top:1px solid #243a56;padding-top:20px;margin-top:28px;text-align:center;color:#6f85a0;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navwrap">
+    <div class="brand">葉建麟 醫師<small>婦產科・婦女泌尿</small></div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">關於醫師</a></li>
+      <li><a href="../index.html#services">專長治療</a></li>
+      <li><a href="../index.html#schedule">看診時段</a></li>
+      <li><a href="index.html">衛教專欄</a></li>
+      <li><a href="../cases.html">案例分享</a></li>
+      <li><a href="../index.html#contact">聯絡諮詢</a></li>
+    </ul>
+    <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank">LINE 預約諮詢</a>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html#about" onclick="closeMobile()">關於醫師</a>
+  <a href="../index.html#services" onclick="closeMobile()">專長治療</a>
+  <a href="../index.html#schedule" onclick="closeMobile()">看診時段</a>
+  <a href="index.html">衛教專欄</a>
+  <a href="../cases.html">案例分享</a>
+  <a href="../index.html#contact" onclick="closeMobile()">聯絡諮詢</a>
+  <a href="https://lin.ee/nmSll8Y" class="mobile-line-btn" target="_blank">💬 LINE 預約諮詢</a>
+</div>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  function closeMobile(){
+    toggle.classList.remove('open');
+    menu.classList.remove('open');
+  }
+</script>
+
+<div class="breadcrumb">
+  <div class="container">
+    <a href="../index.html">首頁</a>
+    <span>›</span>
+    <a href="index.html">衛教專欄</a>
+    <span>›</span>
+    <span>應力性尿失禁</span>
+  </div>
+</div>
+
+<div class="article-hero">
+  <div class="cover-wrap">
+    <img src="cover-stress-incontinence.jpg" alt="應力性尿失禁示意圖：咳嗽打噴嚏時漏尿">
+  </div>
+</div>
+
+<div class="meta-bar">
+  <div class="container">
+    <span class="tag">婦女泌尿</span>
+    <span class="tag">尿失禁</span>
+    <span class="meta-date">2026年</span>
+    <div class="meta-author"><strong>葉建麟 醫師</strong><span>撰文</span></div>
+  </div>
+</div>
+
+<article>
+<div class="container">
+
+  <h1 class="article-title">應力性尿失禁</h1>
+  <p class="article-subtitle">咳嗽、打噴嚏、大笑就漏尿？這不是老化的必然，是可以治療的！</p>
+
+  <div class="article-intro">
+    許多女性在咳嗽、打噴嚏、大笑或運動時，會不自覺地漏出少量尿液，這種情形在醫學上稱為「應力性尿失禁」。雖然不危及生命，但往往讓人感到困窘，甚至影響日常活動與社交生活。事實上，這是一個相當常見的婦科問題，有多種有效的治療方式，不需要默默承受。
+  </div>
+
+  <!-- 一、成因 -->
+  <div class="sec">
+    <span class="sec-label">一</span>
+    <h2>為什麼會漏尿？——成因</h2>
+    <p>應力性尿失禁的發生，是因為支撐尿道的骨盆底肌肉與韌帶鬆弛，導致當腹部壓力突然增加時，尿道無法緊閉而造成漏尿。常見原因包括：</p>
+    <ul class="cause-list">
+      <li>
+        <span class="icon">🤱</span>
+        <div>
+          <strong>分娩傷害</strong>
+          <span>陰道生產時骨盆底肌肉與尿道支撐組織受到拉扯，是最主要的原因。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">🔻</span>
+        <div>
+          <strong>停經後荷爾蒙變化</strong>
+          <span>雌激素下降使尿道與骨盆底組織彈性降低、萎縮。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">⏳</span>
+        <div>
+          <strong>老化</strong>
+          <span>骨盆底肌肉與結締組織隨年齡自然退化。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">⬇️</span>
+        <div>
+          <strong>長期腹壓增加</strong>
+          <span>慢性咳嗽、長期便秘、搬重物等，加速骨盆底鬆弛。</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 二、危險因子 -->
+  <div class="sec">
+    <span class="sec-label">二</span>
+    <h2>哪些人比較容易發生？——危險因子</h2>
+    <ul class="dot-list">
+      <li>曾有一次以上陰道生產，尤其生產巨嬰或產程較長者</li>
+      <li>停經或更年期女性</li>
+      <li>肥胖（體重過重持續增加腹壓）</li>
+      <li>長期慢性咳嗽（如吸菸、氣喘、過敏）</li>
+      <li>長期便秘或需要用力排便</li>
+      <li>從事需搬重物的工作或高強度運動</li>
+    </ul>
+  </div>
+
+  <!-- 三、症狀 -->
+  <div class="sec">
+    <span class="sec-label">三</span>
+    <h2>常見症狀</h2>
+    <ul class="dot-list">
+      <li>咳嗽、打噴嚏、大笑時不自覺漏尿</li>
+      <li>跑步、跳躍、爬樓梯等運動時漏尿</li>
+      <li>搬重物或突然起身時漏尿</li>
+      <li>漏尿量通常不多，但發生頻率影響生活品質</li>
+      <li>需要使用護墊以防外漏</li>
+    </ul>
+    <div class="note-box">
+      <span class="icon">💡</span>
+      <span>與急迫性尿失禁不同，應力性尿失禁通常<strong>沒有強烈尿意</strong>，而是在腹壓增加的瞬間直接漏出。</span>
+    </div>
+  </div>
+
+  <!-- 四、嚴重度分級 -->
+  <div class="sec">
+    <span class="sec-label">四</span>
+    <h2>嚴重度分級</h2>
+    <p>了解自己的嚴重程度，有助於醫師為您規劃最合適的治療方向。</p>
+    <div style="overflow-x:auto;">
+      <table class="severity-table">
+        <tr>
+          <th>等級</th>
+          <th>誘發漏尿情況</th>
+          <th>程度</th>
+        </tr>
+        <tr>
+          <td><strong>第一級</strong></td>
+          <td>咳嗽、打噴嚏、大笑、跳躍、搬重物才會漏尿</td>
+          <td><span class="badge-mild">輕度</span></td>
+        </tr>
+        <tr>
+          <td><strong>第二級</strong></td>
+          <td>快走、慢跑、上下樓梯、做家事就會漏尿</td>
+          <td><span class="badge-mod">中度</span></td>
+        </tr>
+        <tr>
+          <td><strong>第三級</strong></td>
+          <td>一般走路、站起來、改變姿勢就會漏尿</td>
+          <td><span class="badge-sev">重度</span></td>
+        </tr>
+        <tr>
+          <td><strong>第四級</strong></td>
+          <td>休息、翻身甚至躺著都會漏尿，幾乎持續漏尿</td>
+          <td><span class="badge-vsev">極重度</span></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 五、治療方式 -->
+  <div class="sec">
+    <span class="sec-label">五</span>
+    <h2>治療方式</h2>
+    <p>治療方式依症狀嚴重程度選擇，由輕至重循序漸進：</p>
+
+    <div class="treatment-block">
+      <h3>🏃 骨盆底肌肉訓練（凱格爾運動）</h3>
+      <p>適合<strong>第一、二級</strong>患者，也是所有治療的基礎。</p>
+      <ul>
+        <li>每次收縮維持 5 至 10 秒，放鬆後再重複</li>
+        <li>建議每日練習，持續至少六週才會看到效果</li>
+        <li>需長期維持，停練後效果會逐漸減退</li>
+      </ul>
+    </div>
+
+    <div class="treatment-block">
+      <h3>🪑 儀器輔助訓練（磁波椅）<span class="fee-badge">自費</span></h3>
+      <p>適合<strong>第一、二級</strong>症狀較輕微，或無法自行正確執行凱格爾運動者。</p>
+      <ul>
+        <li>建議每週兩次，共六次療程</li>
+        <li>無需換衣服，坐著即可完成</li>
+      </ul>
+    </div>
+
+    <div class="treatment-block">
+      <h3>✨ 陰道雷射<span class="fee-badge">自費</span></h3>
+      <p>適合<strong>第一、二級</strong>症狀較輕微者，或作為手術前的替代選擇。</p>
+      <ul>
+        <li>建議每月一次，共三次療程</li>
+        <li>若有投保門診手術險，部分情況可能可獲理賠</li>
+      </ul>
+    </div>
+
+    <div class="treatment-block">
+      <h3>🔬 尿道中段懸吊手術<span class="ins-badge">健保 / 自費</span></h3>
+      <p><strong>第三、四級</strong>或保守治療效果不佳時建議採用，成功率高達八至九成。</p>
+      <p>手術方式：於陰道內切開約 1 公分的傷口，將吊帶置入尿道中段下方，提供支撐以防止漏尿。手術時間短，多數患者當天或隔天即可返家。</p>
+
+      <div style="overflow-x:auto;margin-top:16px;">
+        <table class="comp-table">
+          <tr>
+            <th></th>
+            <th>健保吊帶</th>
+            <th>自費吊帶（約 3–4 萬元）</th>
+          </tr>
+          <tr>
+            <td>傷口</td>
+            <td>陰道內＋兩側會陰各一個傷口</td>
+            <td>僅陰道內傷口</td>
+          </tr>
+          <tr>
+            <td>術後不適</td>
+            <td>大腿可能較痠痛</td>
+            <td>術後不適感較少</td>
+          </tr>
+          <tr>
+            <td>術後調整</td>
+            <td>較難調整</td>
+            <td>可於門診調整吊帶鬆緊度</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 術後注意 -->
+  <div class="sec">
+    <span class="sec-label">提醒</span>
+    <h2>術後注意事項</h2>
+    <ul class="care-list">
+      <li><span class="num">1</span>建議術後 4 至 6 週避免性行為及提重物。</li>
+      <li><span class="num">2</span>術後仍建議持續骨盆底肌肉訓練，維持長期效果。</li>
+      <li><span class="num">3</span>若有排尿困難、發燒或傷口異常，請盡快回診。</li>
+    </ul>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <h3>長期受漏尿困擾，嚴重影響生活？</h3>
+    <p>建議盡早至門診評估，找出最適合您的治療方式。歡迎透過 LINE 與葉醫師預約諮詢。</p>
+    <a href="https://lin.ee/nmSll8Y" class="line-btn" target="_blank" rel="noopener">💬 加 LINE 諮詢預約</a>
+  </div>
+
+  <a href="index.html" class="back-link">← 回衛教專欄列表</a>
+
+</div>
+</article>
+
+<footer>
+  <div class="foot-inner">
+    <p style="margin-bottom:8px;color:#fff;font-weight:600;">葉建麟 醫師・婦女泌尿次專科</p>
+    <p>看診地點：四季台安醫院・岡山高醫　｜　<a href="https://lin.ee/nmSll8Y" style="color:#8fc7f0;" target="_blank">LINE 線上諮詢</a></p>
+    <div class="foot-bottom">
+      本文內容僅供衛教參考，實際診療請洽專業醫師評估。<br>
+      © 2026 葉建麟醫師．All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
