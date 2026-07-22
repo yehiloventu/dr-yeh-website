@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>子宮鏡螺旋冷刀切除子宮內膜息肉｜葉建麟醫師案例分享</title>
+<meta name="description" content="30多歲女性因異常出血，經子宮鏡發現多顆子宮內膜息肉，備孕中採螺旋冷刀切除，避免破壞子宮內膜。葉建麟醫師案例分享。">
+<style>
+  :root{
+    --navy:#13294b;--blue:#1d4e89;--blue-light:#5b8fc7;
+    --bg-soft:#f4f7fb;--text:#22303f;--text-soft:#5a6b7d;
+    --gold:#b08d57;--white:#ffffff;--line-green:#06c755;
+    --teal:#0e7490;--teal-light:#e0f2fe;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--text);line-height:1.85;background:var(--white);
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  /* Nav */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,.96);border-bottom:1px solid #e7ecf2;
+    backdrop-filter:blur(6px);
+  }
+  .navwrap{
+    max-width:1080px;margin:0 auto;padding:0 24px;
+    display:flex;align-items:center;justify-content:space-between;height:72px;
+  }
+  .brand{font-size:1.05rem;font-weight:700;color:var(--navy);}
+  .brand small{color:var(--text-soft);font-weight:400;font-size:.8rem;margin-left:8px;}
+  .nav-links{display:flex;gap:28px;list-style:none;}
+  .nav-links a{font-size:.88rem;color:var(--text);font-weight:500;}
+  .nav-links a:hover{color:var(--blue);}
+  .nav-cta{
+    background:var(--line-green);color:#fff;padding:9px 20px;
+    border-radius:30px;font-weight:600;font-size:.85rem;white-space:nowrap;
+  }
+  .nav-toggle{
+    display:none;background:none;border:none;cursor:pointer;padding:8px;
+  }
+  .nav-toggle span{
+    display:block;width:22px;height:2px;background:var(--navy);
+    margin:5px 0;transition:.3s;border-radius:2px;
+  }
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .mobile-menu{
+    display:none;position:fixed;top:72px;left:0;right:0;z-index:99;
+    background:#fff;border-bottom:1px solid #e7ecf2;
+    box-shadow:0 8px 24px -8px rgba(19,41,75,.15);
+    flex-direction:column;padding:16px 24px 24px;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{
+    padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);
+    border-bottom:1px solid #f0f4f8;display:block;
+  }
+  .mobile-menu a:last-child{border-bottom:none;}
+  .mobile-line-btn{
+    margin-top:16px;background:var(--line-green);color:#fff;
+    padding:14px;border-radius:10px;text-align:center;font-weight:700;font-size:1rem;
+  }
+  @media(max-width:700px){
+    .nav-links{display:none;}
+    .nav-cta{display:none;}
+    .nav-toggle{display:block;}
+  }
+
+  /* Breadcrumb */
+  .breadcrumb{padding:90px 0 0;}
+  .breadcrumb .container{display:flex;gap:8px;align-items:center;font-size:.83rem;color:var(--text-soft);}
+  .breadcrumb a{color:var(--blue);}
+  .breadcrumb span{color:#ccc;}
+
+  /* Hero */
+  .case-hero{
+    background:linear-gradient(135deg,var(--navy) 0%,#1d4e89 100%);
+    padding:48px 0 52px;margin-top:0;
+  }
+  .case-hero .container{text-align:center;}
+  .case-tag{
+    display:inline-block;background:rgba(255,255,255,.15);color:#fff;
+    font-size:.78rem;font-weight:700;padding:5px 14px;border-radius:20px;
+    letter-spacing:.08em;margin-bottom:18px;
+  }
+  .case-hero h1{
+    font-size:1.8rem;color:#fff;line-height:1.45;margin-bottom:14px;font-weight:800;
+  }
+  .case-hero .subtitle{color:#a8c4e0;font-size:.97rem;}
+  .case-meta{
+    display:flex;justify-content:center;gap:24px;flex-wrap:wrap;
+    margin-top:28px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15);
+  }
+  .case-meta-item{color:#c9d4e3;font-size:.85rem;display:flex;align-items:center;gap:6px;}
+  .case-meta-item strong{color:#fff;}
+
+  /* Case summary */
+  .case-summary{
+    background:var(--teal-light);border-left:4px solid var(--teal);
+    padding:22px 26px;border-radius:0 12px 12px 0;margin:40px 0;
+    font-size:1rem;color:var(--text);line-height:1.9;
+  }
+  .case-summary strong{color:var(--teal);}
+
+  /* Article body */
+  article{padding:40px 0 80px;}
+
+  .sec{margin-bottom:48px;}
+  .sec-label{
+    display:inline-block;background:var(--navy);color:#fff;
+    font-size:.78rem;font-weight:700;padding:4px 12px;border-radius:4px;
+    letter-spacing:.1em;margin-bottom:14px;
+  }
+  .sec h2{font-size:1.3rem;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid #edf1f6;}
+  .sec p{color:var(--text);margin-bottom:14px;font-size:1rem;}
+
+  /* Surgery image gallery */
+  .surgery-gallery{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;}
+  @media(max-width:560px){.surgery-gallery{grid-template-columns:1fr;}}
+  .surgery-fig{
+    border-radius:12px;overflow:hidden;
+    border:1px solid #e2e9f1;background:#000;
+  }
+  .surgery-fig img{
+    width:100%;height:200px;object-fit:cover;display:block;
+    opacity:.95;
+  }
+  .surgery-fig figcaption{
+    padding:10px 14px;font-size:.82rem;color:var(--text-soft);
+    background:#fff;text-align:center;border-top:1px solid #e2e9f1;
+  }
+
+  /* Full width fig */
+  .surgery-fig-full{
+    border-radius:12px;overflow:hidden;border:1px solid #e2e9f1;margin:20px 0;
+  }
+  .surgery-fig-full img{width:100%;height:auto;display:block;}
+  .surgery-fig-full figcaption{
+    padding:12px 18px;font-size:.83rem;color:var(--text-soft);
+    background:#fff;text-align:center;border-top:1px solid #e2e9f1;
+  }
+
+  /* Key point box */
+  .key-box{
+    background:var(--bg-soft);border-radius:12px;padding:22px 26px;margin:20px 0;
+    border:1px solid #dde9f4;
+  }
+  .key-box h4{color:var(--navy);font-size:1rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+  .key-box ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .key-box li{
+    padding-left:20px;position:relative;color:var(--text);font-size:.95rem;
+  }
+  .key-box li::before{
+    content:"";position:absolute;left:0;top:9px;
+    width:7px;height:7px;background:var(--gold);border-radius:50%;
+  }
+
+  /* Doctor note */
+  .doctor-note{
+    background:var(--navy);color:#fff;border-radius:12px;
+    padding:20px 24px;margin:24px 0;font-size:.95rem;line-height:1.8;
+  }
+  .doctor-note .note-label{
+    color:var(--gold);font-weight:700;font-size:.82rem;letter-spacing:.1em;
+    display:block;margin-bottom:8px;
+  }
+
+  /* CTA */
+  .cta-block{
+    background:var(--navy);color:#fff;border-radius:20px;
+    padding:44px 32px;text-align:center;margin-top:56px;
+  }
+  .cta-block h3{font-size:1.45rem;margin-bottom:12px;}
+  .cta-block p{color:#c9d4e3;margin-bottom:26px;max-width:460px;margin-left:auto;margin-right:auto;}
+  .line-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--line-green);color:#fff;padding:14px 34px;border-radius:40px;
+    font-weight:700;font-size:1rem;
+  }
+  .line-btn:hover{background:#05b34c;}
+  .back-link{
+    display:inline-flex;align-items:center;gap:6px;
+    color:var(--blue);font-size:.9rem;font-weight:600;margin-top:34px;
+  }
+
+  /* Footer */
+  footer{background:#0d1d33;color:#9fb0c4;padding:44px 0 28px;font-size:.84rem;}
+  .foot-inner{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .foot-bottom{border-top:1px solid #243a56;padding-top:20px;margin-top:28px;text-align:center;color:#6f85a0;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navwrap">
+    <div class="brand">葉建麟 醫師<small>婦產科・婦女泌尿</small></div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">關於醫師</a></li>
+      <li><a href="../index.html#services">專長治療</a></li>
+      <li><a href="../index.html#schedule">看診時段</a></li>
+      <li><a href="../education/">衛教專欄</a></li>
+      <li><a href="index.html">案例分享</a></li>
+      <li><a href="../index.html#contact">聯絡諮詢</a></li>
+    </ul>
+    <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank">LINE 預約諮詢</a>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html#about" onclick="closeMobile()">關於醫師</a>
+  <a href="../index.html#services" onclick="closeMobile()">專長治療</a>
+  <a href="../index.html#schedule" onclick="closeMobile()">看診時段</a>
+  <a href="../education/">衛教專欄</a>
+  <a href="index.html">案例分享</a>
+  <a href="../index.html#contact" onclick="closeMobile()">聯絡諮詢</a>
+  <a href="https://lin.ee/nmSll8Y" class="mobile-line-btn" target="_blank">💬 LINE 預約諮詢</a>
+</div>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  function closeMobile(){
+    toggle.classList.remove('open');
+    menu.classList.remove('open');
+  }
+</script>
+
+<div class="breadcrumb">
+  <div class="container">
+    <a href="../index.html">首頁</a>
+    <span>›</span>
+    <a href="index.html">案例分享</a>
+    <span>›</span>
+    <span>子宮鏡螺旋冷刀切除子宮內膜息肉</span>
+  </div>
+</div>
+
+<!-- Hero -->
+<div class="case-hero">
+  <div class="container">
+    <div class="case-tag">📋 案例分享</div>
+    <h1>子宮鏡螺旋冷刀切除子宮內膜息肉</h1>
+    <p class="subtitle">備孕中的異常出血，以最小傷害完整切除息肉</p>
+    <div class="case-meta">
+      <div class="case-meta-item"><strong>年齡</strong> 30 多歲女性</div>
+      <div class="case-meta-item"><strong>主訴</strong> 異常子宮出血</div>
+      <div class="case-meta-item"><strong>術式</strong> 子宮鏡螺旋冷刀手術</div>
+      <div class="case-meta-item"><strong>狀態</strong> 備孕中</div>
+    </div>
+  </div>
+</div>
+
+<article>
+<div class="container">
+
+  <!-- 案例摘要 -->
+  <div class="case-summary">
+    這是一位 30 多歲的女性，因為<strong>異常出血</strong>，經門診的診斷性子宮鏡發現<strong>多顆子宮內膜息肉</strong>。因患者正在備孕，建議使用螺旋冷刀切除息肉，以<strong>避免破壞子宮內膜</strong>，保留最佳的著床環境。
+  </div>
+
+  <!-- 一、手術過程 -->
+  <div class="sec">
+    <span class="sec-label">手術紀錄</span>
+    <h2>手術過程影像</h2>
+    <p>以下為本次手術的完整影像紀錄，從發現息肉到完整切除後的子宮腔狀況。</p>
+
+    <!-- 圖一 -->
+    <figure class="surgery-fig-full">
+      <img src="polyp-fig1.jpg" alt="圖一：子宮內膜息肉">
+      <figcaption>圖一｜子宮鏡下可見子宮內膜息肉</figcaption>
+    </figure>
+
+    <!-- 圖二、三 -->
+    <div class="surgery-gallery">
+      <figure class="surgery-fig">
+        <img src="polyp-fig2.jpg" alt="圖二：螺旋冷刀切除息肉">
+        <figcaption>圖二｜螺旋冷刀切除息肉過程</figcaption>
+      </figure>
+      <figure class="surgery-fig">
+        <img src="polyp-fig3.jpg" alt="圖三：螺旋冷刀切除息肉">
+        <figcaption>圖三｜螺旋冷刀切除息肉過程</figcaption>
+      </figure>
+    </div>
+
+    <!-- 圖四 -->
+    <figure class="surgery-fig-full">
+      <img src="polyp-fig4.jpg" alt="圖四：切除完子宮內膜息肉的子宮腔">
+      <figcaption>圖四｜切除完成後的子宮腔，內膜完整保留</figcaption>
+    </figure>
+  </div>
+
+  <!-- 二、為什麼選螺旋冷刀 -->
+  <div class="sec">
+    <span class="sec-label">關鍵選擇</span>
+    <h2>為什麼備孕患者要選螺旋冷刀？</h2>
+    <p>傳統子宮鏡手術多使用電刀切除息肉，雖然有效，但電刀產生的熱能可能傷害周邊的正常子宮內膜，對於備孕患者來說，子宮內膜的完整性至關重要。</p>
+
+    <div class="key-box">
+      <h4>🌿 螺旋冷刀的優勢</h4>
+      <ul>
+        <li>以機械力旋切，<strong>不產生熱能</strong>，不傷害周邊子宮內膜</li>
+        <li>切除精準，可完整取出息肉組織供病理化驗</li>
+        <li>術後子宮腔恢復乾淨，有助於提升著床率</li>
+        <li>適合備孕、反覆著床失敗或有生育需求的患者</li>
+      </ul>
+    </div>
+
+    <div class="doctor-note">
+      <span class="note-label">葉醫師說明</span>
+      子宮內膜息肉是造成異常出血與不孕的常見原因之一。對於備孕中的患者，我們優先選擇螺旋冷刀，原因就是要把對子宮內膜的傷害降到最低，讓患者在術後能有最好的條件備孕。
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <h3>有異常出血或備孕困難的困擾？</h3>
+    <p>建議至門診進行子宮鏡評估，找出原因並討論最適合您的治療方式。歡迎透過 LINE 與葉醫師預約諮詢。</p>
+    <a href="https://lin.ee/nmSll8Y" class="line-btn" target="_blank" rel="noopener">💬 加 LINE 諮詢預約</a>
+  </div>
+
+  <a href="index.html" class="back-link">← 回案例分享列表</a>
+
+</div>
+</article>
+
+<footer>
+  <div class="foot-inner">
+    <p style="margin-bottom:8px;color:#fff;font-weight:600;">葉建麟 醫師・婦女泌尿次專科</p>
+    <p>看診地點：四季台安醫院・岡山高醫　｜　<a href="https://lin.ee/nmSll8Y" style="color:#8fc7f0;" target="_blank">LINE 線上諮詢</a></p>
+    <div class="foot-bottom">
+      本網站內容及圖片僅供醫療衛教參考，實際診療請洽專業醫師評估。<br>
+      © 2026 葉建麟醫師．All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

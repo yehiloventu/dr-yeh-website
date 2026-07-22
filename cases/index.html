@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>案例分享｜葉建麟醫師</title>
+<meta name="description" content="葉建麟醫師婦科手術案例分享，包含子宮鏡冷刀手術、微創手術等真實案例紀錄。">
+<style>
+  :root{
+    --navy:#13294b;--blue:#1d4e89;--blue-light:#5b8fc7;
+    --bg-soft:#f4f7fb;--text:#22303f;--text-soft:#5a6b7d;
+    --gold:#b08d57;--white:#ffffff;--line-green:#06c755;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--text);background:var(--white);line-height:1.75;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1080px;margin:0 auto;padding:0 24px;}
+
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,.96);border-bottom:1px solid #e7ecf2;
+    backdrop-filter:blur(6px);
+  }
+  .navwrap{
+    max-width:1080px;margin:0 auto;padding:0 24px;
+    display:flex;align-items:center;justify-content:space-between;height:72px;
+  }
+  .brand{font-size:1.05rem;font-weight:700;color:var(--navy);}
+  .brand small{color:var(--text-soft);font-weight:400;font-size:.8rem;margin-left:8px;}
+  .nav-links{display:flex;gap:28px;list-style:none;}
+  .nav-links a{font-size:.88rem;color:var(--text);font-weight:500;}
+  .nav-links a:hover,.nav-links a.active{color:var(--blue);}
+  .nav-cta{
+    background:var(--line-green);color:#fff;padding:9px 20px;
+    border-radius:30px;font-weight:600;font-size:.85rem;white-space:nowrap;
+  }
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;transition:.3s;border-radius:2px;}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .mobile-menu{
+    display:none;position:fixed;top:72px;left:0;right:0;z-index:99;
+    background:#fff;border-bottom:1px solid #e7ecf2;
+    box-shadow:0 8px 24px -8px rgba(19,41,75,.15);
+    flex-direction:column;padding:16px 24px 24px;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);border-bottom:1px solid #f0f4f8;display:block;}
+  .mobile-menu a:last-child{border-bottom:none;}
+  .mobile-line-btn{margin-top:16px;background:var(--line-green);color:#fff;padding:14px;border-radius:10px;text-align:center;font-weight:700;font-size:1rem;}
+  @media(max-width:700px){.nav-links{display:none;}.nav-cta{display:none;}.nav-toggle{display:block;}}
+
+  .page-hero{
+    padding:130px 0 60px;
+    background:linear-gradient(135deg,var(--navy) 0%,#1d4e89 100%);
+    text-align:center;
+  }
+  .eyebrow{font-size:.82rem;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;font-weight:700;margin-bottom:14px;}
+  .page-hero h1{font-size:2.2rem;color:#fff;margin-bottom:14px;}
+  .page-hero p{color:#a8c4e0;max-width:520px;margin:0 auto;}
+  .notice-bar{
+    background:#fff8e1;border-bottom:1px solid #f7c948;
+    padding:12px 24px;text-align:center;font-size:.85rem;color:#7a5c00;
+  }
+
+  .cases-sec{padding:72px 0 100px;}
+  .cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  @media(max-width:860px){.cases-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.cases-grid{grid-template-columns:1fr;}}
+
+  .case-card{
+    border:1px solid #e7ecf2;border-radius:16px;overflow:hidden;
+    background:#fff;transition:.25s;display:flex;flex-direction:column;
+  }
+  .case-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 20px 40px -16px rgba(19,41,75,.25);
+    border-color:var(--blue-light);
+  }
+  .card-cover{aspect-ratio:16/9;overflow:hidden;background:#000;}
+  .card-cover img{width:100%;height:100%;object-fit:cover;transition:.3s;opacity:.9;}
+  .case-card:hover .card-cover img{transform:scale(1.03);opacity:1;}
+  .card-body{padding:22px 20px;flex:1;display:flex;flex-direction:column;}
+  .card-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;}
+  .card-tag{background:var(--bg-soft);color:var(--blue);font-size:.74rem;font-weight:700;padding:3px 10px;border-radius:20px;}
+  .card-title{font-size:1.05rem;color:var(--navy);font-weight:700;margin-bottom:8px;line-height:1.45;}
+  .card-excerpt{font-size:.88rem;color:var(--text-soft);flex:1;margin-bottom:16px;}
+  .card-link{color:var(--blue);font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;}
+
+  .card-coming{
+    background:var(--bg-soft);display:flex;align-items:center;justify-content:center;
+    flex-direction:column;gap:10px;min-height:280px;
+    border:2px dashed #c9d7e6;border-radius:16px;color:var(--text-soft);font-size:.9rem;
+  }
+  .card-coming .coming-icon{font-size:2rem;}
+
+  footer{background:#0d1d33;color:#9fb0c4;padding:44px 0 28px;font-size:.84rem;}
+  .foot-inner{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .foot-bottom{border-top:1px solid #243a56;padding-top:20px;margin-top:28px;text-align:center;color:#6f85a0;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navwrap">
+    <div class="brand">葉建麟 醫師<small>婦產科・婦女泌尿</small></div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">關於醫師</a></li>
+      <li><a href="../index.html#services">專長治療</a></li>
+      <li><a href="../index.html#schedule">看診時段</a></li>
+      <li><a href="../education/">衛教專欄</a></li>
+      <li><a href="index.html" class="active">案例分享</a></li>
+      <li><a href="../index.html#contact">聯絡諮詢</a></li>
+    </ul>
+    <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank">LINE 預約諮詢</a>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html#about" onclick="closeMobile()">關於醫師</a>
+  <a href="../index.html#services" onclick="closeMobile()">專長治療</a>
+  <a href="../index.html#schedule" onclick="closeMobile()">看診時段</a>
+  <a href="../education/">衛教專欄</a>
+  <a href="index.html">案例分享</a>
+  <a href="../index.html#contact" onclick="closeMobile()">聯絡諮詢</a>
+  <a href="https://lin.ee/nmSll8Y" class="mobile-line-btn" target="_blank">💬 LINE 預約諮詢</a>
+</div>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  function closeMobile(){
+    toggle.classList.remove('open');
+    menu.classList.remove('open');
+  }
+</script>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Case Studies</div>
+    <h1>案例分享</h1>
+    <p>真實手術案例紀錄，呈現各種婦科問題的診斷與治療過程，供患者參考。</p>
+  </div>
+</div>
+<div class="notice-bar">
+  ⚠️ 本頁圖片含有手術影像，僅供醫療衛教參考。所有案例均已去識別化處理。
+</div>
+
+<section class="cases-sec">
+  <div class="container">
+    <div class="cases-grid">
+
+      <!-- 案例一：子宮內膜息肉 -->
+      <a href="endometrial-polyp.html" class="case-card">
+        <div class="card-cover">
+          <img src="polyp-fig1.jpg" alt="子宮內膜息肉子宮鏡影像">
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="card-tag">子宮鏡手術</span>
+            <span class="card-tag">備孕</span>
+          </div>
+          <div class="card-title">子宮鏡螺旋冷刀切除子宮內膜息肉</div>
+          <div class="card-excerpt">30多歲備孕女性，因異常出血發現多顆子宮內膜息肉，以螺旋冷刀完整切除，保護子宮內膜。</div>
+          <span class="card-link">查看案例 →</span>
+        </div>
+      </a>
+
+      <!-- Coming soon -->
+      <div class="card-coming">
+        <span class="coming-icon">📋</span>
+        <span>更多案例即將上線</span>
+      </div>
+
+      <div class="card-coming">
+        <span class="coming-icon">📋</span>
+        <span>更多案例即將上線</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <p style="margin-bottom:8px;color:#fff;font-weight:600;">葉建麟 醫師・婦女泌尿次專科</p>
+    <p>看診地點：四季台安醫院・岡山高醫　｜　<a href="https://lin.ee/nmSll8Y" style="color:#8fc7f0;" target="_blank">LINE 線上諮詢</a></p>
+    <div class="foot-bottom">
+      本網站內容及圖片僅供醫療衛教參考，實際診療請洽專業醫師評估。<br>
+      © 2026 葉建麟醫師．All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
