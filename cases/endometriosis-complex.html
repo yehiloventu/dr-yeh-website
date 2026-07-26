@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>腹腔鏡微波消融合併雙側巧克力囊腫切除及深層子宮內膜異位切除｜葉建麟醫師案例分享</title>
+<meta name="description" content="30多歲女性嚴重經痛，合併肌腺症、雙側巧克力囊腫及骨盆深層浸潤型子宮內膜異位，葉建麟醫師以腹腔鏡複合手術一次完成治療。">
+<style>
+  :root{
+    --navy:#13294b;--blue:#1d4e89;--blue-light:#5b8fc7;
+    --bg-soft:#f4f7fb;--text:#22303f;--text-soft:#5a6b7d;
+    --gold:#b08d57;--white:#ffffff;--line-green:#06c755;
+    --teal:#0e7490;--teal-light:#e0f2fe;
+    --purple:#6d28d9;--purple-light:#ede9fe;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--text);line-height:1.85;background:var(--white);
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,.96);border-bottom:1px solid #e7ecf2;
+    backdrop-filter:blur(6px);
+  }
+  .navwrap{
+    max-width:1080px;margin:0 auto;padding:0 24px;
+    display:flex;align-items:center;justify-content:space-between;height:72px;
+  }
+  .brand{font-size:1.05rem;font-weight:700;color:var(--navy);}
+  .brand small{color:var(--text-soft);font-weight:400;font-size:.8rem;margin-left:8px;}
+  .nav-links{display:flex;gap:28px;list-style:none;}
+  .nav-links a{font-size:.88rem;color:var(--text);font-weight:500;}
+  .nav-links a:hover{color:var(--blue);}
+  .nav-cta{
+    background:var(--line-green);color:#fff;padding:9px 20px;
+    border-radius:30px;font-weight:600;font-size:.85rem;white-space:nowrap;
+  }
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;transition:.3s;border-radius:2px;}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .mobile-menu{
+    display:none;position:fixed;top:72px;left:0;right:0;z-index:99;
+    background:#fff;border-bottom:1px solid #e7ecf2;
+    box-shadow:0 8px 24px -8px rgba(19,41,75,.15);
+    flex-direction:column;padding:16px 24px 24px;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);border-bottom:1px solid #f0f4f8;display:block;}
+  .mobile-menu a:last-child{border-bottom:none;}
+  .mobile-line-btn{margin-top:16px;background:var(--line-green);color:#fff;padding:14px;border-radius:10px;text-align:center;font-weight:700;font-size:1rem;}
+  @media(max-width:700px){.nav-links{display:none;}.nav-cta{display:none;}.nav-toggle{display:block;}}
+
+  .breadcrumb{padding:90px 0 0;}
+  .breadcrumb .container{display:flex;gap:8px;align-items:center;font-size:.83rem;color:var(--text-soft);}
+  .breadcrumb a{color:var(--blue);}
+  .breadcrumb span{color:#ccc;}
+
+  .case-hero{
+    background:linear-gradient(135deg,#3b0764 0%,#1d4e89 100%);
+    padding:48px 0 52px;
+  }
+  .case-hero .container{text-align:center;}
+  .case-tag{
+    display:inline-block;background:rgba(255,255,255,.15);color:#fff;
+    font-size:.78rem;font-weight:700;padding:5px 14px;border-radius:20px;
+    letter-spacing:.08em;margin-bottom:18px;
+  }
+  .case-hero h1{font-size:1.65rem;color:#fff;line-height:1.5;margin-bottom:14px;font-weight:800;}
+  .case-hero .subtitle{color:#c4aef0;font-size:.97rem;}
+  .case-meta{
+    display:flex;justify-content:center;gap:20px;flex-wrap:wrap;
+    margin-top:28px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15);
+  }
+  .case-meta-item{color:#d4c4f0;font-size:.83rem;display:flex;align-items:center;gap:6px;}
+  .case-meta-item strong{color:#fff;}
+
+  article{padding:40px 0 80px;}
+
+  .case-summary{
+    background:var(--teal-light);border-left:4px solid var(--teal);
+    padding:22px 26px;border-radius:0 12px 12px 0;margin-bottom:44px;
+    font-size:1rem;color:var(--text);line-height:1.9;
+  }
+  .case-summary strong{color:var(--teal);}
+
+  /* Surgery steps */
+  .step-block{margin-bottom:52px;}
+  .step-header{
+    display:flex;align-items:center;gap:14px;margin-bottom:20px;
+    padding-bottom:12px;border-bottom:2px solid #edf1f6;
+  }
+  .step-num{
+    background:var(--navy);color:#fff;width:36px;height:36px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:.85rem;font-weight:700;flex-shrink:0;
+  }
+  .step-header h2{font-size:1.2rem;color:var(--navy);font-weight:700;}
+  .step-block p{color:var(--text);font-size:1rem;margin-bottom:14px;}
+
+  .fig-full{border-radius:12px;overflow:hidden;border:1px solid #e2e9f1;margin:18px 0;}
+  .fig-full img{width:100%;height:auto;display:block;}
+  .fig-full figcaption{padding:11px 16px;font-size:.82rem;color:var(--text-soft);background:#fff;text-align:center;border-top:1px solid #e2e9f1;}
+
+  .fig-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0;}
+  @media(max-width:560px){.fig-grid{grid-template-columns:1fr;}}
+  .fig-card{border-radius:12px;overflow:hidden;border:1px solid #e2e9f1;}
+  .fig-card img{width:100%;height:190px;object-fit:cover;display:block;}
+  .fig-card figcaption{padding:10px 14px;font-size:.82rem;color:var(--text-soft);background:#fff;text-align:center;border-top:1px solid #e2e9f1;}
+
+  .key-box{
+    background:var(--bg-soft);border-radius:12px;padding:20px 24px;margin:16px 0;border:1px solid #dde9f4;
+  }
+  .key-box h4{color:var(--navy);font-size:.97rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+  .key-box ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+  .key-box li{padding-left:18px;position:relative;color:var(--text);font-size:.93rem;}
+  .key-box li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;background:var(--gold);border-radius:50%;}
+
+  .doctor-note{
+    background:var(--navy);color:#fff;border-radius:12px;
+    padding:20px 24px;margin:24px 0;font-size:.95rem;line-height:1.8;
+  }
+  .doctor-note .note-label{color:var(--gold);font-weight:700;font-size:.82rem;letter-spacing:.1em;display:block;margin-bottom:8px;}
+
+  .cta-block{
+    background:var(--navy);color:#fff;border-radius:20px;
+    padding:44px 32px;text-align:center;margin-top:56px;
+  }
+  .cta-block h3{font-size:1.45rem;margin-bottom:12px;}
+  .cta-block p{color:#c9d4e3;margin-bottom:26px;max-width:460px;margin-left:auto;margin-right:auto;}
+  .line-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--line-green);color:#fff;padding:14px 34px;border-radius:40px;
+    font-weight:700;font-size:1rem;
+  }
+  .back-link{display:inline-flex;align-items:center;gap:6px;color:var(--blue);font-size:.9rem;font-weight:600;margin-top:34px;}
+
+  footer{background:#0d1d33;color:#9fb0c4;padding:44px 0 28px;font-size:.84rem;}
+  .foot-inner{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .foot-bottom{border-top:1px solid #243a56;padding-top:20px;margin-top:28px;text-align:center;color:#6f85a0;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navwrap">
+    <div class="brand">葉建麟 醫師<small>婦產科・婦女泌尿</small></div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">關於醫師</a></li>
+      <li><a href="../index.html#services">專長治療</a></li>
+      <li><a href="../index.html#schedule">看診時段</a></li>
+      <li><a href="../education/">衛教專欄</a></li>
+      <li><a href="index.html">案例分享</a></li>
+      <li><a href="../index.html#contact">聯絡諮詢</a></li>
+    </ul>
+    <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank">LINE 預約諮詢</a>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html#about" onclick="closeMobile()">關於醫師</a>
+  <a href="../index.html#services" onclick="closeMobile()">專長治療</a>
+  <a href="../index.html#schedule" onclick="closeMobile()">看診時段</a>
+  <a href="../education/">衛教專欄</a>
+  <a href="index.html">案例分享</a>
+  <a href="../index.html#contact" onclick="closeMobile()">聯絡諮詢</a>
+  <a href="https://lin.ee/nmSll8Y" class="mobile-line-btn" target="_blank">💬 LINE 預約諮詢</a>
+</div>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  function closeMobile(){
+    toggle.classList.remove('open');
+    menu.classList.remove('open');
+  }
+</script>
+
+<div class="breadcrumb">
+  <div class="container">
+    <a href="../index.html">首頁</a>
+    <span>›</span>
+    <a href="index.html">案例分享</a>
+    <span>›</span>
+    <span>腹腔鏡複合手術治療嚴重子宮內膜異位</span>
+  </div>
+</div>
+
+<div class="case-hero">
+  <div class="container">
+    <div class="case-tag">📋 案例分享</div>
+    <h1>腹腔鏡微波消融合併雙側巧克力囊腫切除、<br>骨盆底沾黏分離及深層浸潤型子宮內膜異位切除</h1>
+    <p class="subtitle">嚴重經痛背後——子宮肌腺症、雙側巧克力囊腫與骨盆深層浸潤型子宮內膜異位</p>
+    <div class="case-meta">
+      <div class="case-meta-item"><strong>年齡</strong>30 多歲女性</div>
+      <div class="case-meta-item"><strong>主訴</strong>嚴重經痛</div>
+      <div class="case-meta-item"><strong>診斷</strong>肌腺症 + 雙側巧克力囊腫 + 深層子宮內膜異位</div>
+      <div class="case-meta-item"><strong>需求</strong>有生育需求</div>
+    </div>
+  </div>
+</div>
+
+<article>
+<div class="container">
+
+  <div class="case-summary">
+    患者為 30 多歲女性，因<strong>嚴重經痛</strong>至門診就醫。超音波檢查發現<strong>後壁子宮肌腺症 5 公分</strong>，同時合併<strong>雙側巧克力囊腫</strong>及<strong>嚴重骨盆深層浸潤型子宮內膜異位（DIE）</strong>，整個 Cul-de-sac（子宮直腸窩）完全沾黏。因患者有生育需求，葉醫師規劃以腹腔鏡一次完成四項手術：雙側巧克力囊腫切除、骨盆底沾黏分離、深層子宮內膜異位組織切除，以及肌腺瘤微波消融。
+  </div>
+
+  <!-- Step 1 -->
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">1</div>
+      <h2>術前所見——嚴重子宮內膜異位合併骨盆腔沾黏</h2>
+    </div>
+    <p>腹腔鏡下可見骨盆腔嚴重沾黏，子宮、腸道、卵巢之間大量沾黏組織，Cul-de-sac 完全閉塞，手術視野複雜，難度極高。</p>
+    <figure class="fig-full">
+      <img src="endo-fig1.jpg" alt="圖一：嚴重的子宮內膜異位合併骨盆腔沾黏">
+      <figcaption>圖一｜腹腔鏡下所見：嚴重骨盆腔沾黏，Cul-de-sac 完全閉塞</figcaption>
+    </figure>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">2</div>
+      <h2>骨盆腔沾黏分離</h2>
+    </div>
+    <p>沾黏分離是整台手術中最耗時、風險也最高的步驟。需一層一層仔細辨認正常組織與沾黏組織的界線，在不傷害腸道、輸尿管等重要器官的前提下，逐步鬆解沾黏。</p>
+    <div class="fig-grid">
+      <figure class="fig-card">
+        <img src="endo-fig2.jpg" alt="圖二：分離骨盆腔沾黏">
+        <figcaption>圖二｜逐步分離骨盆腔沾黏</figcaption>
+      </figure>
+      <figure class="fig-card">
+        <img src="endo-fig3.jpg" alt="圖三：分離骨盆腔沾黏">
+        <figcaption>圖三｜持續分離沾黏組織</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">3</div>
+      <h2>直腸子宮及陰道沾黏分離</h2>
+    </div>
+    <p>深層浸潤型子宮內膜異位最常侵犯的部位之一是子宮直腸窩，需將直腸與子宮之間、直腸與陰道後壁之間的沾黏完整分開，恢復正常的解剖結構，同時避免傷及直腸。</p>
+    <div class="fig-grid">
+      <figure class="fig-card">
+        <img src="endo-fig4.jpg" alt="圖四：分離直腸子宮沾黏">
+        <figcaption>圖四｜分離直腸與子宮之間因內膜異位造成的沾黏</figcaption>
+      </figure>
+      <figure class="fig-card">
+        <img src="endo-fig5.jpg" alt="圖五：分離直腸陰道沾黏">
+        <figcaption>圖五｜將直腸與陰道後壁的沾黏分開</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Step 4 -->
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">4</div>
+      <h2>子宮肌腺瘤微波消融</h2>
+    </div>
+    <p>骨盆腔沾黏分離完成後，針對後壁 5 公分肌腺症進行微波消融治療。與傳統切除相比，消融保留子宮肌層完整性，對有生育需求的患者更為合適。</p>
+    <div class="fig-grid">
+      <figure class="fig-card">
+        <img src="endo-fig6.jpg" alt="圖六：子宮肌腺瘤微波消融">
+        <figcaption>圖六｜微波消融針精準置入肌腺症病灶</figcaption>
+      </figure>
+      <figure class="fig-card">
+        <img src="endo-fig7.jpg" alt="圖七：子宮肌腺瘤微波消融">
+        <figcaption>圖七｜微波消融手術進行中</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Step 5 -->
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">5</div>
+      <h2>深層浸潤型子宮內膜異位組織切除</h2>
+    </div>
+    <p>將骨盆腔內殘存的深層浸潤型子宮內膜異位病灶一併切除，送病理化驗，以降低術後復發率，並改善患者的生育預後。</p>
+    <figure class="fig-full">
+      <img src="endo-fig8.jpg" alt="圖八：切除深層浸潤型子宮內膜異位組織">
+      <figcaption>圖八｜切除骨盆腔內深層浸潤型子宮內膜異位組織</figcaption>
+    </figure>
+  </div>
+
+  <!-- Step 6 -->
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">6</div>
+      <h2>術後防沾黏處理</h2>
+    </div>
+    <p>手術完成後，於骨盆腔內塗布防沾黏凝膠，降低術後再次沾黏的機率，有助於提升術後復原品質及生育預後。</p>
+    <figure class="fig-full">
+      <img src="endo-fig9.jpg" alt="圖九：術後塗上防沾黏凝膠">
+      <figcaption>圖九｜手術結束前塗布防沾黏凝膠</figcaption>
+    </figure>
+  </div>
+
+  <!-- 醫師說明 -->
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">💬</div>
+      <h2>醫師說明</h2>
+    </div>
+
+    <div class="key-box">
+      <h4>🔍 本案例的特殊挑戰</h4>
+      <ul>
+        <li>骨盆腔多處嚴重沾黏，Cul-de-sac 完全閉塞，手術視野受限</li>
+        <li>需同時保護直腸、輸尿管等重要器官不受損傷</li>
+        <li>患者有生育需求，手術策略需兼顧治療效果與子宮保留</li>
+        <li>四個術式合併一次完成，縮短患者需多次手術的負擔</li>
+      </ul>
+    </div>
+
+    <div class="doctor-note">
+      <span class="note-label">葉醫師說明</span>
+      這是一台難度非常高的複合手術。子宮內膜異位合併深層浸潤型病灶與嚴重沾黏，若分多次手術處理，患者需承受多次麻醉與恢復期的負擔。在技術許可的情況下，一次手術完整處理所有病灶，對有生育需求的患者來說，能提供最好的術後條件。
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <h3>有嚴重經痛或子宮內膜異位的困擾？</h3>
+    <p>建議至門診進行超音波評估，依病灶範圍規劃最合適的治療方式。歡迎透過 LINE 與葉醫師預約諮詢。</p>
+    <a href="https://lin.ee/nmSll8Y" class="line-btn" target="_blank" rel="noopener">💬 加 LINE 諮詢預約</a>
+  </div>
+
+  <a href="index.html" class="back-link">← 回案例分享列表</a>
+
+</div>
+</article>
+
+<footer>
+  <div class="foot-inner">
+    <p style="margin-bottom:8px;color:#fff;font-weight:600;">葉建麟 醫師・婦女泌尿次專科</p>
+    <p>看診地點：四季台安醫院・岡山高醫　｜　<a href="https://lin.ee/nmSll8Y" style="color:#8fc7f0;" target="_blank">LINE 線上諮詢</a></p>
+    <div class="foot-bottom">
+      本網站內容及圖片僅供醫療衛教參考，實際診療請洽專業醫師評估。<br>
+      © 2026 葉建麟醫師．All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
