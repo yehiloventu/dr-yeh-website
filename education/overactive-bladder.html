@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>膀胱過動症（OAB）｜葉建麟醫師衛教專欄</title>
+<meta name="description" content="明明剛上完廁所，沒多久又有強烈尿意？葉建麟醫師說明膀胱過動症的症狀、成因、診斷與完整治療流程，包含行為治療、藥物與肉毒桿菌素注射。">
+<style>
+  :root{
+    --navy:#13294b;--blue:#1d4e89;--blue-light:#5b8fc7;
+    --bg-soft:#f4f7fb;--text:#22303f;--text-soft:#5a6b7d;
+    --gold:#b08d57;--white:#ffffff;--line-green:#06c755;
+    --rose:#c9636a;--rose-light:#fdf2f3;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--text);line-height:1.85;background:var(--white);
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,.96);border-bottom:1px solid #e7ecf2;
+    backdrop-filter:blur(6px);
+  }
+  .navwrap{
+    max-width:1080px;margin:0 auto;padding:0 24px;
+    display:flex;align-items:center;justify-content:space-between;height:72px;
+  }
+  .brand{font-size:1.05rem;font-weight:700;color:var(--navy);}
+  .brand small{color:var(--text-soft);font-weight:400;font-size:.8rem;margin-left:8px;}
+  .nav-links{display:flex;gap:28px;list-style:none;}
+  .nav-links a{font-size:.88rem;color:var(--text);font-weight:500;}
+  .nav-links a:hover{color:var(--blue);}
+  .nav-cta{
+    background:var(--line-green);color:#fff;padding:9px 20px;
+    border-radius:30px;font-weight:600;font-size:.85rem;white-space:nowrap;
+  }
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;transition:.3s;border-radius:2px;}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .mobile-menu{
+    display:none;position:fixed;top:72px;left:0;right:0;z-index:99;
+    background:#fff;border-bottom:1px solid #e7ecf2;
+    box-shadow:0 8px 24px -8px rgba(19,41,75,.15);
+    flex-direction:column;padding:16px 24px 24px;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);border-bottom:1px solid #f0f4f8;display:block;}
+  .mobile-menu a:last-child{border-bottom:none;}
+  .mobile-line-btn{margin-top:16px;background:var(--line-green);color:#fff;padding:14px;border-radius:10px;text-align:center;font-weight:700;font-size:1rem;}
+  @media(max-width:700px){.nav-links{display:none;}.nav-cta{display:none;}.nav-toggle{display:block;}}
+
+  .breadcrumb{padding:90px 0 0;}
+  .breadcrumb .container{display:flex;gap:8px;align-items:center;font-size:.83rem;color:var(--text-soft);}
+  .breadcrumb a{color:var(--blue);}
+  .breadcrumb span{color:#ccc;}
+
+  .article-hero{background:var(--bg-soft);}
+  .cover-wrap{max-width:600px;margin:0 auto;padding:32px 24px 0;}
+  .cover-wrap img{width:100%;border-radius:16px;box-shadow:0 20px 48px -12px rgba(19,41,75,.2);}
+
+  .meta-bar{padding:24px 0 0;border-bottom:1px solid #edf1f6;}
+  .meta-bar .container{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:20px;}
+  .tag{background:var(--rose-light);color:var(--rose);font-size:.78rem;font-weight:700;padding:5px 12px;border-radius:20px;}
+  .meta-date{color:var(--text-soft);font-size:.83rem;}
+  .meta-author{display:flex;align-items:center;gap:6px;margin-left:auto;color:var(--text-soft);font-size:.83rem;}
+  .meta-author strong{color:var(--navy);}
+
+  article{padding:48px 0 80px;}
+  .article-title{font-size:1.9rem;color:var(--navy);line-height:1.45;margin-bottom:10px;font-weight:800;}
+  .article-subtitle{font-size:1.05rem;color:var(--text-soft);margin-bottom:36px;padding-bottom:28px;border-bottom:2px solid #edf1f6;}
+  .article-intro{
+    background:var(--bg-soft);border-left:4px solid var(--blue);
+    padding:20px 24px;border-radius:0 12px 12px 0;margin-bottom:44px;
+    font-size:1rem;color:var(--text);line-height:1.9;
+  }
+
+  .sec{margin-bottom:50px;}
+  .sec-label{display:inline-block;background:var(--navy);color:#fff;font-size:.78rem;font-weight:700;padding:4px 12px;border-radius:4px;letter-spacing:.1em;margin-bottom:14px;}
+  .sec h2{font-size:1.35rem;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid #edf1f6;}
+  .sec p{color:var(--text);margin-bottom:14px;font-size:1rem;}
+
+  /* Symptom table */
+  .data-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.9rem;}
+  .data-table th{background:var(--navy);color:#fff;padding:11px 14px;text-align:left;font-weight:600;}
+  .data-table td{padding:11px 14px;border-bottom:1px solid #edf1f6;vertical-align:top;}
+  .data-table tr:nth-child(even) td{background:#f8fafc;}
+  .data-table tr:last-child td{border-bottom:none;}
+  .data-table td:first-child{font-weight:600;color:var(--navy);}
+  @media(max-width:560px){
+    .data-table th,.data-table td{padding:9px 8px;font-size:.82rem;}
+  }
+
+  /* Cause list */
+  .cause-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:16px;}
+  .cause-list li{
+    display:flex;gap:14px;align-items:flex-start;
+    background:#fff;border:1px solid #e8edf4;border-radius:10px;padding:15px 18px;
+  }
+  .cause-list .icon{font-size:1.3rem;flex-shrink:0;margin-top:2px;}
+  .cause-list strong{color:var(--navy);display:block;margin-bottom:3px;font-size:.97rem;}
+  .cause-list span{color:var(--text-soft);font-size:.9rem;}
+
+  /* Treatment blocks */
+  .treatment-block{background:var(--bg-soft);border-radius:14px;padding:24px;margin-bottom:18px;border:1px solid #dde9f4;}
+  .treatment-block h3{color:var(--navy);font-size:1.05rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:10px;}
+  .treatment-block p{color:var(--text);font-size:.95rem;margin-bottom:10px;}
+  .treatment-block ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin:8px 0;}
+  .treatment-block li{padding-left:18px;position:relative;color:var(--text-soft);font-size:.9rem;}
+  .treatment-block li::before{content:"·";position:absolute;left:0;color:var(--blue);font-weight:700;font-size:1.2rem;line-height:1.4;}
+  .fee-badge{display:inline-block;background:#fff3e0;color:#e65100;font-size:.74rem;font-weight:700;padding:2px 9px;border-radius:20px;margin-left:8px;}
+
+  /* Drug table */
+  .drug-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.85rem;}
+  .drug-table th{background:var(--blue);color:#fff;padding:10px 12px;text-align:left;font-weight:600;}
+  .drug-table th:first-child{background:var(--navy);}
+  .drug-table td{padding:10px 12px;border-bottom:1px solid #edf1f6;vertical-align:top;}
+  .drug-table tr:nth-child(even) td{background:#f8fafc;}
+  .drug-table tr:last-child td{border-bottom:none;}
+  .drug-table td:first-child{font-weight:600;color:var(--navy);background:#f4f7fb;}
+  @media(max-width:560px){.drug-table th,.drug-table td{padding:8px 7px;font-size:.78rem;}}
+
+  /* Flow chart */
+  .flow-chart{margin:20px 0;}
+  .flow-step{
+    background:#fff;border:1.5px solid #dde9f4;border-radius:10px;
+    padding:14px 20px;text-align:center;font-size:.95rem;font-weight:600;color:var(--navy);
+  }
+  .flow-arrow{text-align:center;color:var(--text-soft);font-size:.82rem;padding:6px 0;line-height:1.5;}
+  .flow-arrow .arr{font-size:1.2rem;display:block;color:var(--blue-light);}
+
+  /* Note box */
+  .note-box{
+    background:#fff8e1;border:1.5px solid #f7c948;border-radius:12px;
+    padding:18px 22px;margin:20px 0;display:flex;gap:12px;align-items:flex-start;
+    font-size:.95rem;color:#7a5c00;
+  }
+  .note-box .icon{font-size:1.3rem;flex-shrink:0;}
+
+  /* OAB types */
+  .oab-types{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+  @media(max-width:500px){.oab-types{grid-template-columns:1fr;}}
+  .oab-type{border-radius:12px;padding:18px 20px;text-align:center;}
+  .oab-type.wet{background:#fce4ec;border:1.5px solid #f48fb1;}
+  .oab-type.dry{background:#e3f2fd;border:1.5px solid #90caf9;}
+  .oab-type h4{font-size:1rem;font-weight:700;margin-bottom:8px;}
+  .oab-type.wet h4{color:#c62828;}
+  .oab-type.dry h4{color:#1565c0;}
+  .oab-type p{font-size:.88rem;color:var(--text-soft);}
+
+  .cta-block{background:var(--navy);color:#fff;border-radius:20px;padding:44px 32px;text-align:center;margin-top:56px;}
+  .cta-block h3{font-size:1.45rem;margin-bottom:12px;}
+  .cta-block p{color:#c9d4e3;margin-bottom:26px;max-width:460px;margin-left:auto;margin-right:auto;}
+  .line-btn{display:inline-flex;align-items:center;gap:10px;background:var(--line-green);color:#fff;padding:14px 34px;border-radius:40px;font-weight:700;font-size:1rem;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;color:var(--blue);font-size:.9rem;font-weight:600;margin-top:34px;}
+
+  footer{background:#0d1d33;color:#9fb0c4;padding:44px 0 28px;font-size:.84rem;}
+  .foot-inner{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .foot-bottom{border-top:1px solid #243a56;padding-top:20px;margin-top:28px;text-align:center;color:#6f85a0;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navwrap">
+    <div class="brand">葉建麟 醫師<small>婦產科・婦女泌尿</small></div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">關於醫師</a></li>
+      <li><a href="../index.html#services">專長治療</a></li>
+      <li><a href="../index.html#schedule">看診時段</a></li>
+      <li><a href="index.html">衛教專欄</a></li>
+      <li><a href="../cases/">案例分享</a></li>
+      <li><a href="../index.html#contact">聯絡諮詢</a></li>
+    </ul>
+    <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank">LINE 預約諮詢</a>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html#about" onclick="closeMobile()">關於醫師</a>
+  <a href="../index.html#services" onclick="closeMobile()">專長治療</a>
+  <a href="../index.html#schedule" onclick="closeMobile()">看診時段</a>
+  <a href="index.html">衛教專欄</a>
+  <a href="../cases/">案例分享</a>
+  <a href="../index.html#contact" onclick="closeMobile()">聯絡諮詢</a>
+  <a href="https://lin.ee/nmSll8Y" class="mobile-line-btn" target="_blank">💬 LINE 預約諮詢</a>
+</div>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  function closeMobile(){
+    toggle.classList.remove('open');
+    menu.classList.remove('open');
+  }
+</script>
+
+<div class="breadcrumb">
+  <div class="container">
+    <a href="../index.html">首頁</a>
+    <span>›</span>
+    <a href="index.html">衛教專欄</a>
+    <span>›</span>
+    <span>膀胱過動症</span>
+  </div>
+</div>
+
+<div class="article-hero">
+  <div class="cover-wrap">
+    <img src="cover-oab.jpg" alt="膀胱過動症衛教封面">
+  </div>
+</div>
+
+<div class="meta-bar">
+  <div class="container">
+    <span class="tag">婦女泌尿</span>
+    <span class="tag">頻尿・急尿</span>
+    <span class="meta-date">2026年</span>
+    <div class="meta-author"><strong>葉建麟 醫師</strong><span>撰文</span></div>
+  </div>
+</div>
+
+<article>
+<div class="container">
+
+  <h1 class="article-title">膀胱過動症（OAB）</h1>
+  <p class="article-subtitle">明明剛上完廁所，沒多久又有強烈尿意？這不是老化的必然，是可以治療的！</p>
+
+  <div class="article-intro">
+    明明剛上完廁所，沒多久又有強烈尿意？還沒走到廁所就忍不住漏出來？這些情形可能是「膀胱過動症」的症狀。膀胱過動症是一種常見卻常被忽略的排尿障礙，對日常生活、社交與睡眠品質影響深遠，但只要及早診治，多數患者都能獲得明顯改善。
+  </div>
+
+  <!-- 一、什麼是膀胱過動症 -->
+  <div class="sec">
+    <span class="sec-label">一</span>
+    <h2>什麼是膀胱過動症？</h2>
+    <p>正常膀胱在儲尿時應保持放鬆，待尿量足夠（約 300 至 500 毫升）才產生尿意。膀胱過動症是指膀胱逼尿肌<strong>不自主地過度收縮</strong>，在尚未裝滿尿液時便產生強烈且難以抑制的尿意，導致頻尿、急尿甚至急迫性漏尿。</p>
+
+    <div class="oab-types">
+      <div class="oab-type wet">
+        <h4>💧 濕性 OAB（Wet OAB）</h4>
+        <p>急尿合併漏尿，來不及到廁所就發生漏尿</p>
+      </div>
+      <div class="oab-type dry">
+        <h4>🔵 乾性 OAB（Dry OAB）</h4>
+        <p>僅有急尿、頻尿，但沒有漏尿情形</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 二、常見症狀 -->
+  <div class="sec">
+    <span class="sec-label">二</span>
+    <h2>常見症狀</h2>
+    <p>膀胱過動症的核心症狀為<strong>急尿</strong>，常合併以下一種或多種症狀：</p>
+    <div style="overflow-x:auto;">
+      <table class="data-table">
+        <tr><th>症狀</th><th>說明</th></tr>
+        <tr><td>急尿（Urgency）</td><td>突然出現強烈、難以忍受的尿意，無法延遲排尿，是核心症狀</td></tr>
+        <tr><td>頻尿（Frequency）</td><td>白天排尿次數超過 8 次以上</td></tr>
+        <tr><td>夜尿（Nocturia）</td><td>夜間因尿意醒來超過 1 次以上</td></tr>
+        <tr><td>急迫性尿失禁</td><td>急尿後來不及到達廁所即發生漏尿（部分患者有，部分無）</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 三、成因 -->
+  <div class="sec">
+    <span class="sec-label">三</span>
+    <h2>常見原因</h2>
+    <ul class="cause-list">
+      <li>
+        <span class="icon">🫀</span>
+        <div>
+          <strong>膀胱逼尿肌過度收縮</strong>
+          <span>最常見原因。膀胱神經過於敏感，導致還沒充滿尿液就產生強烈尿意。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">🧠</span>
+        <div>
+          <strong>神經系統疾病</strong>
+          <span>腦中風、帕金森氏症、多發性硬化症等，影響排尿神經控制。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">⏳</span>
+        <div>
+          <strong>老化</strong>
+          <span>隨年齡增加，膀胱容量可能減少，神經控制能力下降。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">⚠️</span>
+        <div>
+          <strong>膀胱受到刺激</strong>
+          <span>泌尿道感染、膀胱結石、間質性膀胱炎，甚至膀胱腫瘤（較少見，但需排除）。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">☕</span>
+        <div>
+          <strong>生活習慣因素</strong>
+          <span>喝太多咖啡、茶、酒精或含咖啡因飲料；大量飲水；抽菸；肥胖。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">🌸</span>
+        <div>
+          <strong>荷爾蒙變化</strong>
+          <span>停經後雌激素下降，可能使膀胱及尿道功能改變。</span>
+        </div>
+      </li>
+      <li>
+        <span class="icon">🤱</span>
+        <div>
+          <strong>骨盆底肌肉功能異常</strong>
+          <span>懷孕、生產後或骨盆底肌肉鬆弛，可能影響排尿控制。</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 四、診斷 -->
+  <div class="sec">
+    <span class="sec-label">四</span>
+    <h2>診斷方式</h2>
+    <p>醫師會透過以下方式進行完整評估：</p>
+    <div class="treatment-block">
+      <ul>
+        <li><strong>病史詢問</strong>：排尿症狀、發作時間、生活影響程度</li>
+        <li><strong>排尿日記</strong>：記錄 2 至 3 天的排尿時間、尿量、漏尿情形，是最重要的評估工具</li>
+        <li><strong>尿液分析及尿液培養</strong>：排除泌尿道感染</li>
+        <li><strong>超音波</strong>：評估膀胱餘尿量及排除其他病灶</li>
+        <li><strong>尿路動力學檢查</strong>：客觀測量膀胱壓力與逼尿肌收縮情形，適合症狀複雜或治療反應不佳者</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 五、治療 -->
+  <div class="sec">
+    <span class="sec-label">五</span>
+    <h2>治療方式</h2>
+
+    <div class="treatment-block">
+      <h3>🌿 生活型態調整（第一線基礎治療）</h3>
+      <p>無論搭配何種治療，生活型態的調整都是基礎，不可省略：</p>
+      <ul>
+        <li>控制咖啡因攝取：減少咖啡、茶、可樂、能量飲料</li>
+        <li>適量飲水：每日約 1,500 至 2,000 毫升，避免一次大量飲水，睡前 2 小時減少飲水</li>
+        <li>避免酒精：酒精具有利尿及刺激膀胱的作用</li>
+        <li>改善便秘：增加蔬果與纖維攝取，減少直腸對膀胱的壓迫</li>
+        <li>控制體重：減重可有效降低膀胱過動症狀</li>
+      </ul>
+    </div>
+
+    <div class="treatment-block">
+      <h3>🏃 行為治療</h3>
+      <ul>
+        <li><strong>膀胱訓練</strong>：透過逐漸延長排尿間隔，重新訓練膀胱的儲尿能力，建議在醫師或護理師指導下進行</li>
+        <li><strong>骨盆底肌肉訓練（凱格爾運動）</strong>：強化骨盆底肌肉，有助於抑制急尿感，建議持續至少六週以上</li>
+      </ul>
+    </div>
+
+    <div class="treatment-block">
+      <h3>💊 藥物治療</h3>
+      <p>目前常用藥物分為兩大類：</p>
+      <div style="overflow-x:auto;">
+        <table class="drug-table">
+          <tr><th>藥物</th><th>作用機轉</th><th>常見副作用</th><th>備註</th></tr>
+          <tr>
+            <td>Solifenacin（衛喜康）</td>
+            <td>抗膽鹼藥物，抑制逼尿肌收縮</td>
+            <td>口乾、便秘、視力模糊</td>
+            <td>一天一顆</td>
+          </tr>
+          <tr>
+            <td>Tolterodine（Detrusitol）</td>
+            <td>抗膽鹼藥物，抑制逼尿肌收縮</td>
+            <td>口乾、便秘</td>
+            <td>一天一顆</td>
+          </tr>
+          <tr>
+            <td>Mirabegron（Betmiga）</td>
+            <td>β3腎上腺素促效劑，促進膀胱放鬆</td>
+            <td>血壓輕微上升，口乾較少</td>
+            <td>副作用較少，為較新藥物</td>
+          </tr>
+        </table>
+      </div>
+      <div class="note-box" style="margin-top:14px;">
+        <span class="icon">💡</span>
+        <span>Mirabegron 副作用較少，適合無法耐受抗膽鹼副作用的患者。建議持續服藥至少<strong>三至六個月</strong>評估療效。</span>
+      </div>
+    </div>
+
+    <div class="treatment-block">
+      <h3>🔬 進階治療（藥物效果不佳時）</h3>
+      <ul>
+        <li><strong>膀胱內肉毒桿菌素注射</strong><span class="fee-badge">自費</span>：於膀胱鏡下將肉毒桿菌素注射至膀胱逼尿肌，有效抑制逼尿肌過動，效果約持續六至十二個月，需定期重複注射</li>
+        <li><strong>骶神經調控術（Sacral Neuromodulation）</strong>：透過植入裝置調節控制膀胱的骶神經，適合保守治療及藥物均無效的難治型患者</li>
+        <li><strong>膀胱擴大手術</strong>：極少數需要，僅在所有治療均無效時考慮</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 六、治療流程 -->
+  <div class="sec">
+    <span class="sec-label">六</span>
+    <h2>治療流程建議</h2>
+    <div class="flow-chart">
+      <div class="flow-step">生活型態調整＋行為治療（第一線）</div>
+      <div class="flow-arrow"><span class="arr">↓</span>效果不足</div>
+      <div class="flow-step">藥物治療（持續 3–6 個月）</div>
+      <div class="flow-arrow"><span class="arr">↓</span>效果不足或無法耐受副作用</div>
+      <div class="flow-step">膀胱內肉毒桿菌素注射</div>
+      <div class="flow-arrow"><span class="arr">↓</span>效果不足</div>
+      <div class="flow-step">骶神經調控術</div>
+      <div class="flow-arrow"><span class="arr">↓</span>極少數需要</div>
+      <div class="flow-step">膀胱擴大手術</div>
+    </div>
+    <p style="margin-top:20px;">膀胱過動症雖然擾人，但絕非正常老化的必然結果，也不是必須默默承受的困擾。若您有頻尿、急尿或夜尿的困擾，建議盡早至門診評估，對症治療，找回生活品質。</p>
+  </div>
+
+  <div class="cta-block">
+    <h3>有頻尿、急尿或夜尿的困擾？</h3>
+    <p>建議至門診進行排尿評估，找出原因並規劃最合適的治療方式。歡迎透過 LINE 與葉醫師預約諮詢。</p>
+    <a href="https://lin.ee/nmSll8Y" class="line-btn" target="_blank" rel="noopener">💬 加 LINE 諮詢預約</a>
+  </div>
+
+  <a href="index.html" class="back-link">← 回衛教專欄列表</a>
+
+</div>
+</article>
+
+<footer>
+  <div class="foot-inner">
+    <p style="margin-bottom:8px;color:#fff;font-weight:600;">葉建麟 醫師・婦女泌尿次專科</p>
+    <p>看診地點：四季台安醫院・岡山高醫　｜　<a href="https://lin.ee/nmSll8Y" style="color:#8fc7f0;" target="_blank">LINE 線上諮詢</a></p>
+    <div class="foot-bottom">
+      本文內容僅供衛教參考，實際診療請洽專業醫師評估。<br>
+      © 2026 葉建麟醫師．All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
