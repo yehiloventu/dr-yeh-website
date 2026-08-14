@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>衛教專欄｜葉建麟醫師</title>
-<meta name="description" content="葉建麟醫師婦科衛教專欄，提供骨盆器官脫垂、尿失禁、子宮肌瘤、產科等婦女健康知識。">
+<meta name="description" content="葉建麟醫師婦科衛教專欄，提供骨盆器官脫垂、子宮肌瘤、尿失禁、膀胱過動症、HPV疫苗等婦女健康知識。">
 <style>
   :root{
     --navy:#13294b;--blue:#1d4e89;--blue-light:#5b8fc7;
@@ -13,69 +13,32 @@
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{
-    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
-    color:var(--text);background:var(--white);line-height:1.75;
-  }
+  body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--text);background:var(--white);line-height:1.75;}
   a{color:inherit;text-decoration:none;}
   img{max-width:100%;display:block;}
   .container{max-width:1080px;margin:0 auto;padding:0 24px;}
 
-  header{
-    position:fixed;top:0;left:0;right:0;z-index:100;
-    background:rgba(255,255,255,.96);border-bottom:1px solid #e7ecf2;
-    backdrop-filter:blur(6px);
-  }
-  .navwrap{
-    max-width:1080px;margin:0 auto;padding:0 24px;
-    display:flex;align-items:center;justify-content:space-between;height:72px;
-  }
+  header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.96);border-bottom:1px solid #e7ecf2;backdrop-filter:blur(6px);}
+  .navwrap{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px;}
   .brand{font-size:1.05rem;font-weight:700;color:var(--navy);}
   .brand small{color:var(--text-soft);font-weight:400;font-size:.8rem;margin-left:8px;}
   .nav-links{display:flex;gap:28px;list-style:none;}
   .nav-links a{font-size:.88rem;color:var(--text);font-weight:500;}
   .nav-links a:hover,.nav-links a.active{color:var(--blue);}
-  .nav-cta{
-    background:var(--line-green);color:#fff;padding:9px 20px;
-    border-radius:30px;font-weight:600;font-size:.85rem;white-space:nowrap;
-  }
-  .nav-toggle{
-    display:none;background:none;border:none;cursor:pointer;padding:8px;
-  }
-  .nav-toggle span{
-    display:block;width:22px;height:2px;background:var(--navy);
-    margin:5px 0;transition:.3s;border-radius:2px;
-  }
+  .nav-cta{background:var(--line-green);color:#fff;padding:9px 20px;border-radius:30px;font-weight:600;font-size:.85rem;white-space:nowrap;}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;transition:.3s;border-radius:2px;}
   .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
   .nav-toggle.open span:nth-child(2){opacity:0;}
   .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-  .mobile-menu{
-    display:none;position:fixed;top:72px;left:0;right:0;z-index:99;
-    background:#fff;border-bottom:1px solid #e7ecf2;
-    box-shadow:0 8px 24px -8px rgba(19,41,75,.15);
-    flex-direction:column;padding:16px 24px 24px;
-  }
+  .mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;z-index:99;background:#fff;border-bottom:1px solid #e7ecf2;box-shadow:0 8px 24px -8px rgba(19,41,75,.15);flex-direction:column;padding:16px 24px 24px;}
   .mobile-menu.open{display:flex;}
-  .mobile-menu a{
-    padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);
-    border-bottom:1px solid #f0f4f8;display:block;
-  }
+  .mobile-menu a{padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);border-bottom:1px solid #f0f4f8;display:block;}
   .mobile-menu a:last-child{border-bottom:none;}
-  .mobile-line-btn{
-    margin-top:16px;background:var(--line-green);color:#fff;
-    padding:14px;border-radius:10px;text-align:center;font-weight:700;font-size:1rem;
-  }
-  @media(max-width:700px){
-    .nav-links{display:none;}
-    .nav-cta{display:none;}
-    .nav-toggle{display:block;}
-  }
+  .mobile-line-btn{margin-top:16px;background:var(--line-green);color:#fff;padding:14px;border-radius:10px;text-align:center;font-weight:700;font-size:1rem;}
+  @media(max-width:700px){.nav-links{display:none;}.nav-cta{display:none;}.nav-toggle{display:block;}}
 
-  .page-hero{
-    padding:130px 0 60px;
-    background:linear-gradient(135deg,var(--bg-soft) 0%,#eaf1f8 100%);
-    text-align:center;
-  }
+  .page-hero{padding:130px 0 60px;background:linear-gradient(135deg,var(--bg-soft) 0%,#eaf1f8 100%);text-align:center;}
   .eyebrow{font-size:.82rem;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;font-weight:700;margin-bottom:14px;}
   .page-hero h1{font-size:2.2rem;color:var(--navy);margin-bottom:14px;}
   .page-hero p{color:var(--text-soft);max-width:520px;margin:0 auto;}
@@ -85,15 +48,8 @@
   @media(max-width:860px){.articles-grid{grid-template-columns:1fr 1fr;}}
   @media(max-width:560px){.articles-grid{grid-template-columns:1fr;}}
 
-  .article-card{
-    border:1px solid #e7ecf2;border-radius:16px;overflow:hidden;
-    background:#fff;transition:.25s;display:flex;flex-direction:column;
-  }
-  .article-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 20px 40px -16px rgba(19,41,75,.25);
-    border-color:var(--blue-light);
-  }
+  .article-card{border:1px solid #e7ecf2;border-radius:16px;overflow:hidden;background:#fff;transition:.25s;display:flex;flex-direction:column;}
+  .article-card:hover{transform:translateY(-5px);box-shadow:0 20px 40px -16px rgba(19,41,75,.25);border-color:var(--blue-light);}
   .card-cover{aspect-ratio:3/4;overflow:hidden;}
   .card-cover img{width:100%;height:100%;object-fit:cover;transition:.3s;}
   .article-card:hover .card-cover img{transform:scale(1.03);}
@@ -104,11 +60,7 @@
   .card-excerpt{font-size:.88rem;color:var(--text-soft);flex:1;margin-bottom:16px;}
   .card-link{color:var(--blue);font-weight:700;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;}
 
-  .card-coming{
-    background:var(--bg-soft);display:flex;align-items:center;justify-content:center;
-    flex-direction:column;gap:10px;min-height:340px;
-    border:2px dashed #c9d7e6;border-radius:16px;color:var(--text-soft);font-size:.9rem;
-  }
+  .card-coming{background:var(--bg-soft);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;min-height:340px;border:2px dashed #c9d7e6;border-radius:16px;color:var(--text-soft);font-size:.9rem;}
   .card-coming .coming-icon{font-size:2rem;}
 
   footer{background:#0d1d33;color:#9fb0c4;padding:44px 0 28px;font-size:.84rem;}
@@ -126,7 +78,7 @@
       <li><a href="../index.html#services">專長治療</a></li>
       <li><a href="../index.html#schedule">看診時段</a></li>
       <li><a href="index.html" class="active">衛教專欄</a></li>
-      <li><a href="../cases.html">案例分享</a></li>
+      <li><a href="../cases/">案例分享</a></li>
       <li><a href="../index.html#contact">聯絡諮詢</a></li>
     </ul>
     <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank">LINE 預約諮詢</a>
@@ -140,7 +92,7 @@
   <a href="../index.html#services" onclick="closeMobile()">專長治療</a>
   <a href="../index.html#schedule" onclick="closeMobile()">看診時段</a>
   <a href="index.html">衛教專欄</a>
-  <a href="../cases.html">案例分享</a>
+  <a href="../cases/">案例分享</a>
   <a href="../index.html#contact" onclick="closeMobile()">聯絡諮詢</a>
   <a href="https://lin.ee/nmSll8Y" class="mobile-line-btn" target="_blank">💬 LINE 預約諮詢</a>
 </div>
@@ -175,10 +127,7 @@
           <img src="cover-prolapse.png" alt="骨盆器官脫垂">
         </div>
         <div class="card-body">
-          <div class="card-tags">
-            <span class="card-tag">婦女泌尿</span>
-            <span class="card-tag">骨盆底</span>
-          </div>
+          <div class="card-tags"><span class="card-tag">婦女泌尿</span><span class="card-tag">骨盆底</span></div>
           <div class="card-title">大腿中間夾顆球？原來可能是骨盆器官脫垂！</div>
           <div class="card-excerpt">子宮、膀胱、直腸脫垂——許多女性有，卻不知道可以治療。了解成因、症狀與治療方式。</div>
           <span class="card-link">閱讀全文 →</span>
@@ -191,10 +140,7 @@
           <img src="cover-microwave.jpg" alt="自然孔微波消融手術">
         </div>
         <div class="card-body">
-          <div class="card-tags">
-            <span class="card-tag">子宮肌瘤</span>
-            <span class="card-tag">微創治療</span>
-          </div>
+          <div class="card-tags"><span class="card-tag">子宮肌瘤</span><span class="card-tag">微創治療</span></div>
           <div class="card-title">自然孔微波消融手術</div>
           <div class="card-excerpt">不開刀、不留疤——子宮肌瘤與肌腺症的微創新選擇。了解適應症、優點與術後注意事項。</div>
           <span class="card-link">閱讀全文 →</span>
@@ -207,10 +153,7 @@
           <img src="cover-stress-incontinence.jpg" alt="應力性尿失禁">
         </div>
         <div class="card-body">
-          <div class="card-tags">
-            <span class="card-tag">婦女泌尿</span>
-            <span class="card-tag">尿失禁</span>
-          </div>
+          <div class="card-tags"><span class="card-tag">婦女泌尿</span><span class="card-tag">尿失禁</span></div>
           <div class="card-title">應力性尿失禁</div>
           <div class="card-excerpt">咳嗽、打噴嚏、大笑就漏尿？了解成因、嚴重度分級與各種治療選項，找回生活品質。</div>
           <span class="card-link">閱讀全文 →</span>
@@ -223,12 +166,22 @@
           <img src="cover-oab.jpg" alt="膀胱過動症">
         </div>
         <div class="card-body">
-          <div class="card-tags">
-            <span class="card-tag">婦女泌尿</span>
-            <span class="card-tag">頻尿・急尿</span>
-          </div>
+          <div class="card-tags"><span class="card-tag">婦女泌尿</span><span class="card-tag">頻尿・急尿</span></div>
           <div class="card-title">膀胱過動症（OAB）</div>
           <div class="card-excerpt">明明剛上完廁所，沒多久又有強烈尿意？了解膀胱過動症的成因、症狀分類與完整治療流程。</div>
+          <span class="card-link">閱讀全文 →</span>
+        </div>
+      </a>
+
+      <!-- 文章五：HPV疫苗 -->
+      <a href="hpv-vaccine.html" class="article-card">
+        <div class="card-cover">
+          <img src="cover-hpv.jpg" alt="子宮頸癌疫苗HPV疫苗">
+        </div>
+        <div class="card-body">
+          <div class="card-tags"><span class="card-tag">子宮頸癌預防</span><span class="card-tag">HPV疫苗</span></div>
+          <div class="card-title">子宮頸癌疫苗（HPV疫苗）衛教手冊</div>
+          <div class="card-excerpt">認識 HPV、了解九價疫苗的保護範圍、接種時程、副作用，以及十大常見問答完整解析。</div>
           <span class="card-link">閱讀全文 →</span>
         </div>
       </a>

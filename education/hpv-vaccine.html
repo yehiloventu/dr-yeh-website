@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>子宮頸癌疫苗（HPV疫苗）｜葉建麟醫師衛教專欄</title>
+<meta name="description" content="認識HPV與子宮頸癌，了解九價疫苗的保護範圍、建議接種年齡、劑次時程、副作用與常見問答。葉建麟醫師衛教專欄。">
+<style>
+  :root{
+    --navy:#13294b;--blue:#1d4e89;--blue-light:#5b8fc7;
+    --bg-soft:#f4f7fb;--text:#22303f;--text-soft:#5a6b7d;
+    --gold:#b08d57;--white:#ffffff;--line-green:#06c755;
+    --rose:#c9636a;--rose-light:#fdf2f3;
+    --teal:#0e7490;--teal-light:#e0f2fe;
+    --green:#15803d;--green-light:#dcfce7;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--text);line-height:1.85;background:var(--white);
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,.96);border-bottom:1px solid #e7ecf2;
+    backdrop-filter:blur(6px);
+  }
+  .navwrap{
+    max-width:1080px;margin:0 auto;padding:0 24px;
+    display:flex;align-items:center;justify-content:space-between;height:72px;
+  }
+  .brand{font-size:1.05rem;font-weight:700;color:var(--navy);}
+  .brand small{color:var(--text-soft);font-weight:400;font-size:.8rem;margin-left:8px;}
+  .nav-links{display:flex;gap:28px;list-style:none;}
+  .nav-links a{font-size:.88rem;color:var(--text);font-weight:500;}
+  .nav-links a:hover{color:var(--blue);}
+  .nav-cta{background:var(--line-green);color:#fff;padding:9px 20px;border-radius:30px;font-weight:600;font-size:.85rem;white-space:nowrap;}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;transition:.3s;border-radius:2px;}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;z-index:99;background:#fff;border-bottom:1px solid #e7ecf2;box-shadow:0 8px 24px -8px rgba(19,41,75,.15);flex-direction:column;padding:16px 24px 24px;}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);border-bottom:1px solid #f0f4f8;display:block;}
+  .mobile-menu a:last-child{border-bottom:none;}
+  .mobile-line-btn{margin-top:16px;background:var(--line-green);color:#fff;padding:14px;border-radius:10px;text-align:center;font-weight:700;font-size:1rem;}
+  @media(max-width:700px){.nav-links{display:none;}.nav-cta{display:none;}.nav-toggle{display:block;}}
+
+  /* Hero 封面圖 */
+  .article-hero-img{background:var(--bg-soft);}
+  .cover-wrap{max-width:600px;margin:0 auto;padding:32px 24px 0;}
+  .cover-wrap img{width:100%;border-radius:16px;box-shadow:0 20px 48px -12px rgba(19,41,75,.2);}
+
+  .meta-bar{padding:20px 0;border-bottom:1px solid #edf1f6;}
+  .meta-bar .container{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .tag{background:var(--green-light);color:var(--green);font-size:.78rem;font-weight:700;padding:5px 12px;border-radius:20px;}
+  .meta-date{color:var(--text-soft);font-size:.83rem;}
+  .meta-author{display:flex;align-items:center;gap:6px;margin-left:auto;color:var(--text-soft);font-size:.83rem;}
+  .meta-author strong{color:var(--navy);}
+
+  article{padding:48px 0 80px;}
+  .article-intro{
+    background:var(--bg-soft);border-left:4px solid var(--blue);
+    padding:20px 24px;border-radius:0 12px 12px 0;margin-bottom:44px;
+    font-size:1rem;color:var(--text);line-height:1.9;
+  }
+
+  .sec{margin-bottom:50px;}
+  .sec-label{display:inline-block;background:var(--navy);color:#fff;font-size:.78rem;font-weight:700;padding:4px 12px;border-radius:4px;letter-spacing:.1em;margin-bottom:14px;}
+  .sec h2{font-size:1.35rem;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid #edf1f6;}
+  .sec p{color:var(--text);margin-bottom:14px;font-size:1rem;}
+
+  /* Tables */
+  .data-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.9rem;}
+  .data-table th{background:var(--navy);color:#fff;padding:11px 14px;text-align:left;font-weight:600;}
+  .data-table td{padding:11px 14px;border-bottom:1px solid #edf1f6;vertical-align:top;}
+  .data-table tr:nth-child(even) td{background:#f8fafc;}
+  .data-table tr:last-child td{border-bottom:none;}
+  .data-table td:first-child{font-weight:600;color:var(--navy);}
+  @media(max-width:560px){.data-table th,.data-table td{padding:9px 8px;font-size:.82rem;}}
+
+  /* Dose cards */
+  .dose-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+  @media(max-width:500px){.dose-grid{grid-template-columns:1fr;}}
+  .dose-card{border-radius:12px;padding:20px;text-align:center;border:2px solid;}
+  .dose-card.two{background:#e8f5e9;border-color:#a5d6a7;}
+  .dose-card.three{background:#e3f2fd;border-color:#90caf9;}
+  .dose-card h4{font-size:1.1rem;font-weight:800;margin-bottom:6px;}
+  .dose-card.two h4{color:#2e7d32;}
+  .dose-card.three h4{color:#1565c0;}
+  .dose-card .age{font-size:.82rem;font-weight:600;margin-bottom:10px;opacity:.8;}
+  .dose-card .schedule{font-size:.88rem;color:var(--text-soft);}
+
+  /* Note / info box */
+  .note-box{background:#fff8e1;border:1.5px solid #f7c948;border-radius:12px;padding:18px 22px;margin:20px 0;display:flex;gap:12px;align-items:flex-start;font-size:.95rem;color:#7a5c00;}
+  .note-box .icon{font-size:1.3rem;flex-shrink:0;}
+  .info-box{background:var(--teal-light);border:1.5px solid #7dd3fc;border-radius:12px;padding:18px 22px;margin:20px 0;font-size:.95rem;color:#0c4a6e;}
+
+  /* Side effect list */
+  .dot-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:16px;}
+  .dot-list li{padding-left:20px;position:relative;color:var(--text);font-size:.97rem;}
+  .dot-list li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;background:var(--gold);border-radius:50%;}
+
+  /* Q&A */
+  .qa-list{display:flex;flex-direction:column;gap:16px;margin-bottom:16px;}
+  .qa-item{background:#fff;border:1px solid #e8edf4;border-radius:12px;overflow:hidden;}
+  .qa-q{
+    background:var(--bg-soft);padding:16px 20px;font-weight:700;color:var(--navy);
+    font-size:.97rem;display:flex;gap:12px;align-items:flex-start;
+  }
+  .qa-q .q-badge{
+    background:var(--navy);color:#fff;font-size:.75rem;font-weight:700;
+    padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px;
+  }
+  .qa-a{padding:16px 20px;font-size:.93rem;color:var(--text);line-height:1.85;border-top:1px solid #edf1f6;}
+  .qa-a strong{color:var(--navy);}
+
+  /* References */
+  .ref-block{background:var(--bg-soft);border-radius:12px;padding:20px 24px;margin-top:20px;font-size:.82rem;color:var(--text-soft);line-height:1.7;}
+  .ref-block h4{color:var(--navy);font-size:.9rem;font-weight:700;margin-bottom:10px;}
+  .ref-block p{margin-bottom:6px;}
+
+  .cta-block{background:var(--navy);color:#fff;border-radius:20px;padding:44px 32px;text-align:center;margin-top:56px;}
+  .cta-block h3{font-size:1.45rem;margin-bottom:12px;}
+  .cta-block p{color:#c9d4e3;margin-bottom:26px;max-width:460px;margin-left:auto;margin-right:auto;}
+  .line-btn{display:inline-flex;align-items:center;gap:10px;background:var(--line-green);color:#fff;padding:14px 34px;border-radius:40px;font-weight:700;font-size:1rem;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;color:var(--blue);font-size:.9rem;font-weight:600;margin-top:34px;}
+
+  footer{background:#0d1d33;color:#9fb0c4;padding:44px 0 28px;font-size:.84rem;}
+  .foot-inner{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .foot-bottom{border-top:1px solid #243a56;padding-top:20px;margin-top:28px;text-align:center;color:#6f85a0;}
+
+  .breadcrumb{padding:72px 0 0;}
+  .breadcrumb .container{display:flex;gap:8px;align-items:center;font-size:.83rem;color:var(--text-soft);}
+  .breadcrumb a{color:var(--blue);}
+  .breadcrumb span{color:#ccc;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navwrap">
+    <div class="brand">葉建麟 醫師<small>婦產科・婦女泌尿</small></div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">關於醫師</a></li>
+      <li><a href="../index.html#services">專長治療</a></li>
+      <li><a href="../index.html#schedule">看診時段</a></li>
+      <li><a href="index.html">衛教專欄</a></li>
+      <li><a href="../cases/">案例分享</a></li>
+      <li><a href="../index.html#contact">聯絡諮詢</a></li>
+    </ul>
+    <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank">LINE 預約諮詢</a>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html#about" onclick="closeMobile()">關於醫師</a>
+  <a href="../index.html#services" onclick="closeMobile()">專長治療</a>
+  <a href="../index.html#schedule" onclick="closeMobile()">看診時段</a>
+  <a href="index.html">衛教專欄</a>
+  <a href="../cases/">案例分享</a>
+  <a href="../index.html#contact" onclick="closeMobile()">聯絡諮詢</a>
+  <a href="https://lin.ee/nmSll8Y" class="mobile-line-btn" target="_blank">💬 LINE 預約諮詢</a>
+</div>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  function closeMobile(){
+    toggle.classList.remove('open');
+    menu.classList.remove('open');
+  }
+</script>
+
+<div class="article-hero-img">
+  <div class="cover-wrap">
+    <img src="cover-hpv.jpg" alt="子宮頸癌疫苗（HPV疫苗）衛教封面">
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <div class="container">
+    <a href="../index.html">首頁</a>
+    <span>›</span>
+    <a href="index.html">衛教專欄</a>
+    <span>›</span>
+    <span>子宮頸癌疫苗（HPV疫苗）</span>
+  </div>
+</div>
+
+<div class="meta-bar">
+  <div class="container">
+    <span class="tag">子宮頸癌預防</span>
+    <span class="tag">HPV疫苗</span>
+    <span class="meta-date">2026年8月</span>
+    <div class="meta-author"><strong>葉建麟 醫師</strong><span>整理</span></div>
+  </div>
+</div>
+
+<article>
+<div class="container">
+
+  <div class="article-intro">
+    子宮頸癌是台灣女性常見的癌症之一，超過九成的病例與「人類乳突病毒」（HPV）持續感染有關。HPV疫苗是目前最有效的預防手段，愈早接種、保護效果愈好。本文整理疫苗種類、接種時程、副作用與常見問答，幫助您做出知情的健康決策。
+  </div>
+
+  <!-- 一、認識子宮頸癌與HPV -->
+  <div class="sec">
+    <span class="sec-label">一</span>
+    <h2>認識子宮頸癌與 HPV</h2>
+    <p>HPV（人類乳突病毒）是一群透過性接觸傳染的病毒，種類超過一百多種，其中<strong>第 16、18 型</strong>是導致子宮頸癌最主要的高風險型別。</p>
+    <p>除了子宮頸癌，HPV 感染也與陰道癌、外陰癌、肛門癌、口咽癌，以及俗稱「菜花」的生殖器疣有關，<strong>男女皆可能感染並致病</strong>。因此接種 HPV 疫苗不只是女性的健康議題，也是全民防護的一環。</p>
+  </div>
+
+  <!-- 二、疫苗種類 -->
+  <div class="sec">
+    <span class="sec-label">二</span>
+    <h2>疫苗種類與保護範圍</h2>
+    <p>目前台灣公費及自費提供的 HPV 疫苗以<strong>九價疫苗</strong>為主，可預防第 6、11、16、18、31、33、45、52、58 型 HPV，涵蓋約九成造成子宮頸癌的高風險型別，同時也能預防生殖器疣（菜花）。</p>
+    <div class="note-box">
+      <span class="icon">⚠️</span>
+      <span>疫苗預防的是「<strong>尚未感染</strong>」的 HPV 型別，無法治療已存在的感染或病灶。因此愈早接種、在開始性行為前完成接種，保護效果愈好。</span>
+    </div>
+  </div>
+
+  <!-- 三、建議接種對象 -->
+  <div class="sec">
+    <span class="sec-label">三</span>
+    <h2>建議接種對象與年齡</h2>
+    <ul class="dot-list">
+      <li>建議接種年齡：<strong>9 歲以上即可接種</strong>，沒有上限年齡，但愈早於開始性行為前接種，保護力愈完整</li>
+      <li>國中公費接種對象（台灣）：<strong>國中八、九年級（國二）男女學生</strong>，可於校園集中接種</li>
+      <li>已有性經驗、曾感染 HPV 或曾患生殖器疣者，<strong>仍可接種</strong>以預防尚未感染的其他型別</li>
+      <li>男性接種同樣可預防生殖器疣、肛門癌等相關疾病，並降低伴侶感染風險</li>
+    </ul>
+  </div>
+
+  <!-- 四、接種劑次 -->
+  <div class="sec">
+    <span class="sec-label">四</span>
+    <h2>接種劑次與時程</h2>
+    <p>接種劑數依<strong>開始接種時的年齡</strong>而定：</p>
+
+    <div class="dose-grid">
+      <div class="dose-card two">
+        <h4>2 劑</h4>
+        <div class="age">9～14 歲開始接種</div>
+        <div class="schedule">第 0 個月、<br>第 6～12 個月各一劑</div>
+      </div>
+      <div class="dose-card three">
+        <h4>3 劑</h4>
+        <div class="age">15 歲以上開始接種</div>
+        <div class="schedule">第 0、2、6 個月<br>各一劑</div>
+      </div>
+    </div>
+
+    <div class="note-box">
+      <span class="icon">💡</span>
+      <span>若接種時程延誤，<strong>不需從頭重新開始</strong>，只要回診補齊剩餘劑次即可。實際時程請以醫師評估為準。</span>
+    </div>
+  </div>
+
+  <!-- 五、保護力 -->
+  <div class="sec">
+    <span class="sec-label">五</span>
+    <h2>保護力與效果</h2>
+    <p>臨床研究顯示，九價 HPV 疫苗對涵蓋型別可提供<strong>高達九成以上的保護效果</strong>，且保護力可持續多年。目前長期追蹤資料已證實至少可維持約 10 年以上的保護力。是否需要追加劑次，將視後續研究與公衛政策更新。</p>
+  </div>
+
+  <!-- 六、副作用 -->
+  <div class="sec">
+    <span class="sec-label">六</span>
+    <h2>常見副作用</h2>
+    <ul class="dot-list">
+      <li><strong>注射部位紅、腫、痛</strong>：最常見，通常一至兩天內會自行緩解</li>
+      <li><strong>輕微發燒、頭痛、疲倦</strong>：屬身體產生免疫反應的正常現象</li>
+      <li>極少數人可能出現暈針或過敏反應，建議接種後在醫療院所<strong>觀察 15～30 分鐘</strong>再離開</li>
+    </ul>
+    <div class="info-box">
+      HPV 疫苗安全性已經過大規模臨床試驗與長期上市後監測驗證，嚴重不良反應相當罕見。
+    </div>
+  </div>
+
+  <!-- 七、禁忌 -->
+  <div class="sec">
+    <span class="sec-label">七</span>
+    <h2>接種禁忌與注意事項</h2>
+    <ul class="dot-list">
+      <li>對疫苗成分（如酵母菌）曾有嚴重過敏反應者，接種前務必告知醫師評估</li>
+      <li>發燒或中重度急性感染期間，建議延後接種，待身體康復後再施打</li>
+      <li><strong>懷孕期間不建議接種</strong>；若接種期間發現懷孕，應暫停後續劑次，待生產後再補齊</li>
+      <li>哺乳期婦女經評估後仍可接種</li>
+      <li>接種後應避免劇烈運動，並留意注射部位反應</li>
+    </ul>
+  </div>
+
+  <!-- 八、公費資訊 -->
+  <div class="sec">
+    <span class="sec-label">八</span>
+    <h2>公費接種資訊（台灣）</h2>
+    <p>國民健康署自 2025 年 9 月起，已將公費 HPV 疫苗接種對象擴大至<strong>國中八、九年級（國二）男女學生</strong>，採九價疫苗、共接種 2 劑，由學校統一安排集中接種。</p>
+    <p>不符合公費資格者（如年齡較長或非設籍學生），可至醫療院所自費接種，費用及接種時程請洽各醫療院所。</p>
+  </div>
+
+  <!-- 九、常見問答 -->
+  <div class="sec">
+    <span class="sec-label">九</span>
+    <h2>常見問答</h2>
+    <div class="qa-list">
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q1</span>已經有性經驗，接種疫苗還有效嗎？</div>
+        <div class="qa-a">有效。疫苗仍可預防尚未感染的其他 HPV 型別，只是保護效果會比從未有性經驗者稍低。建議諮詢醫師評估接種效益。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q2</span>接種疫苗後就不用再做子宮頸抹片了嗎？</div>
+        <div class="qa-a"><strong>不可以。</strong>疫苗無法涵蓋所有致癌型別，且無法治療已存在的感染，因此接種後仍應依建議定期進行子宮頸抹片篩檢，才能達到完整防護。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q3</span>男生也需要打 HPV 疫苗嗎？</div>
+        <div class="qa-a">需要。男性接種可預防生殖器疣、肛門癌、口咽癌等 HPV 相關疾病，也能降低將病毒傳染給伴侶的風險，達到群體保護效果。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q4</span>九價疫苗的保護力可以維持多久？</div>
+        <div class="qa-a">目前已有長期追蹤研究支持保護力<strong>至少維持 10 年以上</strong>。針對 9-15 歲族群的三期臨床試驗追蹤至第三劑後 10 年，抗體反應持續存在且無疫苗型別相關病變案例。另一項北歐長期追蹤研究追蹤至 12 年時保護力仍達 100%，研究目標將持續追蹤至 14 年。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q5</span>打了九價疫苗，還會得菜花嗎？</div>
+        <div class="qa-a">仍有小機率，但風險大幅降低。菜花約九成由 HPV 第 6、11 型引起，九價疫苗涵蓋這兩型；但仍有約一成菜花是疫苗未涵蓋的其他型別造成，無法預防。若接種前已感染，疫苗也無法清除既有感染。建議愈早接種效果愈好，接種後仍建議維持安全性行為與定期健康檢查。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q6</span>曾經得過菜花，接種疫苗還有效嗎？</div>
+        <div class="qa-a">仍建議接種。曾感染 HPV 6 或 11 型不代表感染過其他型別，接種疫苗仍可預防 16、18、31、33、45、52、58 等尚未感染的高風險型別，降低未來罹患子宮頸癌等相關疾病的風險。但疫苗本身無法治療現有病灶，仍需搭配醫師治療。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q7</span>目前建議的接種年齡為何？</div>
+        <div class="qa-a">常規建議接種年齡為 <strong>9-12 歲</strong>，此階段效果最好，只需接種 2 劑。13-26 歲若錯過常規接種期，仍建議儘快補打（3 劑）。27-45 歲屬於「共同臨床決策」範圍，美國 FDA 已核准九價疫苗適用至 45 歲，是否接種建議與醫師討論個人風險與效益。台灣目前公費對象為國中八、九年級男女學生。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q8</span>超過 45 歲接種還有效嗎？</div>
+        <div class="qa-a">45 歲以上目前沒有正式核准的仿單適應症，屬於仿單外使用，實證資料也相對有限。疫苗仍能刺激產生保護抗體，但缺乏大型臨床試驗直接驗證能實際降低疾病發生率。是否接種建議與醫師討論個人性經驗史與風險因子，並非絕對無效，而是效益需要個別化評估。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q9</span>超過 10 年後需要追加接種嗎？</div>
+        <div class="qa-a">目前<strong>不需要</strong>。CDC、ACIP 等主要公衛機構皆未建議完整接種後需追加劑次，標準劑程本身即視為完整保護。長期追蹤研究也顯示保護力持續維持，未出現下降訊號；若未來證據改變，公衛機構才會重新評估。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q10</span>沒有按照時程接種，需要重新開始整組疫苗嗎？</div>
+        <div class="qa-a"><strong>不需要。</strong>不論間隔多久沒打，之前已接種的劑次仍然有效，只要回診補齊剩餘劑次即可。2 劑者兩劑間至少要間隔 5 個月；3 劑者第 1-2 劑至少間隔 4 週、第 2-3 劑至少間隔 12 週、第 1-3 劑至少間隔 5 個月。實際狀況建議由醫師依接種紀錄確認。</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 參考資料 -->
+  <div class="ref-block">
+    <h4>📚 資料來源</h4>
+    <p>衛生福利部國民健康署等公開衛教資訊，並參考以下同儕審查研究：</p>
+    <p>Restrepo J, et al. Ten-Year Follow-up of 9-Valent Human Papillomavirus Vaccine. <em>Pediatrics.</em> 2023;152(4):e2022060993.</p>
+    <p>Kjaer SK, et al. Long-term effectiveness of the nine-valent human papillomavirus vaccine: Interim results after 12 years of follow-up in Scandinavian women. <em>Hum Vaccin Immunother.</em> 2024;20(1):2377903.</p>
+    <p style="margin-top:10px;">本文為一般衛教資訊整理，實際接種資格、劑量與注意事項可能隨政策調整，接種前請務必諮詢醫師。</p>
+  </div>
+
+  <div class="cta-block">
+    <h3>想了解 HPV 疫苗是否適合您？</h3>
+    <p>歡迎透過 LINE 與葉醫師預約門診，依個人狀況提供最合適的接種建議。</p>
+    <a href="https://lin.ee/nmSll8Y" class="line-btn" target="_blank" rel="noopener">💬 加 LINE 諮詢預約</a>
+  </div>
+
+  <a href="index.html" class="back-link">← 回衛教專欄列表</a>
+
+</div>
+</article>
+
+<footer>
+  <div class="foot-inner">
+    <p style="margin-bottom:8px;color:#fff;font-weight:600;">葉建麟 醫師・婦女泌尿次專科</p>
+    <p>看診地點：四季台安醫院・岡山高醫　｜　<a href="https://lin.ee/nmSll8Y" style="color:#8fc7f0;" target="_blank">LINE 線上諮詢</a></p>
+    <div class="foot-bottom">
+      本文內容僅供衛教參考，實際診療請洽專業醫師評估。<br>
+      © 2026 葉建麟醫師．All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
