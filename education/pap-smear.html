@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>薄層抹片檢查｜葉建麟醫師衛教專欄</title>
+<meta name="description" content="認識液基薄層子宮頸抹片檢查，了解與傳統抹片的差異、建議篩檢年齡與頻率、檢查前注意事項、結果判讀與常見問答。葉建麟醫師衛教專欄。">
+<style>
+  :root{
+    --navy:#13294b;--blue:#1d4e89;--blue-light:#5b8fc7;
+    --bg-soft:#f4f7fb;--text:#22303f;--text-soft:#5a6b7d;
+    --gold:#b08d57;--white:#ffffff;--line-green:#06c755;
+    --rose:#c9636a;--rose-light:#fdf2f3;
+    --teal:#0e7490;--teal-light:#e0f2fe;
+    --green:#15803d;--green-light:#dcfce7;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--text);line-height:1.85;background:var(--white);}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.96);border-bottom:1px solid #e7ecf2;backdrop-filter:blur(6px);}
+  .navwrap{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px;}
+  .brand{font-size:1.05rem;font-weight:700;color:var(--navy);}
+  .brand small{color:var(--text-soft);font-weight:400;font-size:.8rem;margin-left:8px;}
+  .nav-links{display:flex;gap:28px;list-style:none;}
+  .nav-links a{font-size:.88rem;color:var(--text);font-weight:500;}
+  .nav-links a:hover{color:var(--blue);}
+  .nav-cta{background:var(--line-green);color:#fff;padding:9px 20px;border-radius:30px;font-weight:600;font-size:.85rem;white-space:nowrap;}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;transition:.3s;border-radius:2px;}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;z-index:99;background:#fff;border-bottom:1px solid #e7ecf2;box-shadow:0 8px 24px -8px rgba(19,41,75,.15);flex-direction:column;padding:16px 24px 24px;}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);border-bottom:1px solid #f0f4f8;display:block;}
+  .mobile-menu a:last-child{border-bottom:none;}
+  .mobile-line-btn{margin-top:16px;background:var(--line-green);color:#fff;padding:14px;border-radius:10px;text-align:center;font-weight:700;font-size:1rem;}
+  @media(max-width:700px){.nav-links{display:none;}.nav-cta{display:none;}.nav-toggle{display:block;}}
+
+  /* Hero 封面圖 */
+  .article-hero-img{background:var(--bg-soft);}
+  .cover-wrap{max-width:600px;margin:0 auto;padding:32px 24px 0;}
+  .cover-wrap img{width:100%;border-radius:16px;box-shadow:0 20px 48px -12px rgba(19,41,75,.2);}
+
+  .breadcrumb{padding:24px 0 0;}
+  .breadcrumb .container{display:flex;gap:8px;align-items:center;font-size:.83rem;color:var(--text-soft);}
+  .breadcrumb a{color:var(--blue);}
+  .breadcrumb span{color:#ccc;}
+
+  .meta-bar{padding:20px 0;border-bottom:1px solid #edf1f6;}
+  .meta-bar .container{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .tag{background:var(--teal-light);color:var(--teal);font-size:.78rem;font-weight:700;padding:5px 12px;border-radius:20px;}
+  .meta-date{color:var(--text-soft);font-size:.83rem;}
+  .meta-author{display:flex;align-items:center;gap:6px;margin-left:auto;color:var(--text-soft);font-size:.83rem;}
+  .meta-author strong{color:var(--navy);}
+
+  article{padding:48px 0 80px;}
+  .article-intro{background:var(--bg-soft);border-left:4px solid var(--blue);padding:20px 24px;border-radius:0 12px 12px 0;margin-bottom:44px;font-size:1rem;color:var(--text);line-height:1.9;}
+
+  .sec{margin-bottom:50px;}
+  .sec-label{display:inline-block;background:var(--navy);color:#fff;font-size:.78rem;font-weight:700;padding:4px 12px;border-radius:4px;letter-spacing:.1em;margin-bottom:14px;}
+  .sec h2{font-size:1.35rem;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid #edf1f6;}
+  .sec p{color:var(--text);margin-bottom:14px;font-size:1rem;}
+
+  /* Comparison table */
+  .comp-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.87rem;}
+  .comp-table th{background:var(--navy);color:#fff;padding:11px 12px;text-align:left;font-weight:600;}
+  .comp-table th:first-child{background:#0e7490;}
+  .comp-table td{padding:11px 12px;border-bottom:1px solid #edf1f6;vertical-align:top;}
+  .comp-table tr:nth-child(even) td{background:#f8fafc;}
+  .comp-table tr:last-child td{border-bottom:none;}
+  .comp-table td:first-child{font-weight:600;color:var(--navy);background:#f4f7fb;}
+  @media(max-width:560px){.comp-table th,.comp-table td{padding:9px 8px;font-size:.79rem;}}
+
+  /* Schedule table */
+  .data-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.9rem;}
+  .data-table th{background:var(--teal);color:#fff;padding:11px 14px;text-align:left;font-weight:600;}
+  .data-table td{padding:11px 14px;border-bottom:1px solid #edf1f6;vertical-align:top;}
+  .data-table tr:nth-child(even) td{background:#f8fafc;}
+  .data-table tr:last-child td{border-bottom:none;}
+  .data-table td:first-child{font-weight:600;color:var(--navy);}
+  @media(max-width:560px){.data-table th,.data-table td{padding:9px 8px;font-size:.82rem;}}
+
+  /* Result blocks */
+  .result-grid{display:flex;flex-direction:column;gap:12px;margin:16px 0;}
+  .result-item{border-radius:10px;padding:16px 20px;display:flex;gap:14px;align-items:flex-start;}
+  .result-item.normal{background:#f0fdf4;border:1.5px solid #86efac;}
+  .result-item.mild{background:#fefce8;border:1.5px solid #fde047;}
+  .result-item.mod{background:#fff7ed;border:1.5px solid #fdba74;}
+  .result-item.high{background:#fef2f2;border:1.5px solid #fca5a5;}
+  .result-item .badge{font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:20px;flex-shrink:0;white-space:nowrap;margin-top:2px;}
+  .result-item.normal .badge{background:#16a34a;color:#fff;}
+  .result-item.mild .badge{background:#ca8a04;color:#fff;}
+  .result-item.mod .badge{background:#ea580c;color:#fff;}
+  .result-item.high .badge{background:#dc2626;color:#fff;}
+  .result-item .content p{font-size:.93rem;color:var(--text);}
+
+  /* Note box */
+  .note-box{background:#fff8e1;border:1.5px solid #f7c948;border-radius:12px;padding:18px 22px;margin:20px 0;display:flex;gap:12px;align-items:flex-start;font-size:.95rem;color:#7a5c00;}
+  .note-box .icon{font-size:1.3rem;flex-shrink:0;}
+  .info-box{background:var(--teal-light);border-radius:12px;padding:18px 22px;margin:16px 0;font-size:.95rem;color:#0c4a6e;border:1px solid #7dd3fc;}
+
+  /* Dot list */
+  .dot-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:16px;}
+  .dot-list li{padding-left:20px;position:relative;color:var(--text);font-size:.97rem;}
+  .dot-list li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;background:var(--gold);border-radius:50%;}
+
+  /* Steps */
+  .step-list{display:flex;flex-direction:column;gap:14px;margin:16px 0;}
+  .step-row{display:flex;gap:14px;align-items:flex-start;}
+  .step-num{background:var(--teal);color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;flex-shrink:0;margin-top:2px;}
+  .step-row p{color:var(--text);font-size:.97rem;}
+
+  /* Q&A */
+  .qa-list{display:flex;flex-direction:column;gap:14px;margin-bottom:16px;}
+  .qa-item{background:#fff;border:1px solid #e8edf4;border-radius:12px;overflow:hidden;}
+  .qa-q{background:var(--bg-soft);padding:15px 20px;font-weight:700;color:var(--navy);font-size:.95rem;display:flex;gap:12px;align-items:flex-start;}
+  .qa-q .q-badge{background:var(--teal);color:#fff;font-size:.74rem;font-weight:700;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px;}
+  .qa-a{padding:15px 20px;font-size:.93rem;color:var(--text);line-height:1.85;border-top:1px solid #edf1f6;}
+  .qa-a strong{color:var(--navy);}
+
+  /* Ref */
+  .ref-block{background:var(--bg-soft);border-radius:12px;padding:20px 24px;margin-top:20px;font-size:.82rem;color:var(--text-soft);line-height:1.7;}
+  .ref-block h4{color:var(--navy);font-size:.9rem;font-weight:700;margin-bottom:8px;}
+
+  .cta-block{background:var(--navy);color:#fff;border-radius:20px;padding:44px 32px;text-align:center;margin-top:56px;}
+  .cta-block h3{font-size:1.45rem;margin-bottom:12px;}
+  .cta-block p{color:#c9d4e3;margin-bottom:26px;max-width:460px;margin-left:auto;margin-right:auto;}
+  .line-btn{display:inline-flex;align-items:center;gap:10px;background:var(--line-green);color:#fff;padding:14px 34px;border-radius:40px;font-weight:700;font-size:1rem;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;color:var(--blue);font-size:.9rem;font-weight:600;margin-top:34px;}
+
+  footer{background:#0d1d33;color:#9fb0c4;padding:44px 0 28px;font-size:.84rem;}
+  .foot-inner{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .foot-bottom{border-top:1px solid #243a56;padding-top:20px;margin-top:28px;text-align:center;color:#6f85a0;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navwrap">
+    <div class="brand">葉建麟 醫師<small>婦產科・婦女泌尿</small></div>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">關於醫師</a></li>
+      <li><a href="../index.html#services">專長治療</a></li>
+      <li><a href="../index.html#schedule">看診時段</a></li>
+      <li><a href="index.html">衛教專欄</a></li>
+      <li><a href="../cases/">案例分享</a></li>
+      <li><a href="../index.html#contact">聯絡諮詢</a></li>
+    </ul>
+    <a href="https://lin.ee/nmSll8Y" class="nav-cta" target="_blank">LINE 預約諮詢</a>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html#about" onclick="closeMobile()">關於醫師</a>
+  <a href="../index.html#services" onclick="closeMobile()">專長治療</a>
+  <a href="../index.html#schedule" onclick="closeMobile()">看診時段</a>
+  <a href="index.html">衛教專欄</a>
+  <a href="../cases/">案例分享</a>
+  <a href="../index.html#contact" onclick="closeMobile()">聯絡諮詢</a>
+  <a href="https://lin.ee/nmSll8Y" class="mobile-line-btn" target="_blank">💬 LINE 預約諮詢</a>
+</div>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  function closeMobile(){
+    toggle.classList.remove('open');
+    menu.classList.remove('open');
+  }
+</script>
+
+<div class="article-hero-img">
+  <div class="cover-wrap">
+    <img src="cover-pap.jpg" alt="薄層抹片檢查衛教封面">
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <div class="container">
+    <a href="../index.html">首頁</a>
+    <span>›</span>
+    <a href="index.html">衛教專欄</a>
+    <span>›</span>
+    <span>薄層抹片檢查</span>
+  </div>
+</div>
+
+<div class="meta-bar">
+  <div class="container">
+    <span class="tag">子宮頸癌篩檢</span>
+    <span class="tag">抹片檢查</span>
+    <span class="meta-date">2026年8月</span>
+    <div class="meta-author"><strong>葉建麟 醫師</strong><span>整理</span></div>
+  </div>
+</div>
+
+<article>
+<div class="container">
+
+  <div class="article-intro">
+    子宮頸抹片是預防子宮頸癌最重要且最有效的篩檢工具之一。薄層抹片（液基細胞學）是傳統抹片的改良版本，準確度更高，同一檢體還可加做 HPV DNA 檢測。本文說明兩種抹片的差異、建議篩檢時機、檢查注意事項、結果判讀與常見問答。
+  </div>
+
+  <!-- 一、什麼是薄層抹片 -->
+  <div class="sec">
+    <span class="sec-label">一</span>
+    <h2>什麼是薄層抹片檢查？</h2>
+    <p>子宮頸抹片是透過採集子宮頸表面細胞，觀察是否有癌前病變或癌細胞的篩檢工具。</p>
+    <p><strong>薄層抹片（液基細胞學，Liquid-Based Cytology）</strong>是抹片檢查的改良版本。傳統抹片是將細胞直接塗抹於玻片；薄層抹片則將採檢刷洗下的細胞浸泡於固定液中，經離心去除血液、黏液等雜質後，以自動化儀器製成分布均勻的單層細胞玻片，讓病理科醫師判讀時影像更清晰，降低因干擾造成的誤差。</p>
+  </div>
+
+  <!-- 二、比較表 -->
+  <div class="sec">
+    <span class="sec-label">二</span>
+    <h2>薄層抹片 vs 傳統抹片比較</h2>
+    <div style="overflow-x:auto;">
+      <table class="comp-table">
+        <tr><th>比較項目</th><th>傳統抹片</th><th>薄層抹片（液基）</th></tr>
+        <tr><td>採檢方式</td><td>細胞直接塗抹於玻片</td><td>細胞洗入固定液，離心純化後製成單層玻片</td></tr>
+        <tr><td>判讀品質</td><td>容易受血液、黏液、發炎細胞干擾</td><td>雜質較少、細胞分布均勻，影像較清晰</td></tr>
+        <tr><td>準確度</td><td>假陰性率較高（文獻約三至四成病變可能未被偵測）</td><td>整體準確度較高（文獻約九成以上）</td></tr>
+        <tr><td>加做HPV檢測</td><td>需另外採檢</td><td>同一檢體可加做HPV DNA等分子檢測</td></tr>
+        <tr><td>健保／公費</td><td>符合資格者公費給付</td><td>目前健保未給付，須自費</td></tr>
+        <tr><td>費用</td><td>公費對象免費；自費約NT$200-400</td><td>自費約NT$1,500-2,000（依院所而異）</td></tr>
+      </table>
+    </div>
+    <div class="note-box">
+      <span class="icon">💡</span>
+      <span>不論選擇傳統抹片或薄層抹片，<strong>定期規律篩檢</strong>都能有效降低子宮頸癌的發生率與死亡率。薄層抹片準確度較高，屬自費項目，可依個人需求與經濟考量與醫師討論。</span>
+    </div>
+  </div>
+
+  <!-- 三、為什麼要定期篩檢 -->
+  <div class="sec">
+    <span class="sec-label">三</span>
+    <h2>為什麼要定期做抹片篩檢？</h2>
+    <p>超過九成的子宮頸癌與 HPV 持續感染有關，感染初期通常<strong>沒有明顯症狀</strong>。感染可能經數年逐漸進展為癌前病變，抹片檢查能在癌變之前就發現異常，及早介入治療。國外研究顯示，規律篩檢可降低<strong>六至九成</strong>的子宮頸癌發生率與死亡率。</p>
+    <div class="info-box">
+      已接種 HPV 疫苗者<strong>仍須定期做抹片檢查</strong>。疫苗無法涵蓋所有致癌型別，也無法治療接種前已存在的感染，接種疫苗與定期篩檢是互補、缺一不可的兩道防護。
+    </div>
+  </div>
+
+  <!-- 四、建議年齡與頻率 -->
+  <div class="sec">
+    <span class="sec-label">四</span>
+    <h2>建議篩檢對象、年齡與頻率（台灣）</h2>
+    <div style="overflow-x:auto;">
+      <table class="data-table">
+        <tr><th>對象</th><th>公費補助內容</th></tr>
+        <tr><td>25～29 歲有性經驗之女性</td><td>每 <strong>3 年</strong> 1 次子宮頸抹片</td></tr>
+        <tr><td>30 歲以上女性</td><td>每 <strong>年</strong> 1 次子宮頸抹片</td></tr>
+        <tr><td>35、45、65 歲女性</td><td>當年度可公費加做 1 次 HPV DNA 檢測（每案補助 NT$1,400）</td></tr>
+      </table>
+    </div>
+    <p>首次抹片結果正常者，隔年建議再做 1 次；連續兩次結果正常，之後可視醫師建議延長篩檢間隔。薄層抹片目前不在公費補助範圍，如欲加做需自費。</p>
+  </div>
+
+  <!-- 五、檢查前注意事項 -->
+  <div class="sec">
+    <span class="sec-label">五</span>
+    <h2>檢查前注意事項</h2>
+    <ul class="dot-list">
+      <li>建議安排在<strong>月經結束後第 10～20 天內</strong>檢查，此時子宮頸分泌物較少，採檢品質較佳，應避開月經來潮期間</li>
+      <li>檢查前 <strong>48 小時內避免陰道性行為</strong></li>
+      <li>檢查前 48 小時內避免陰道沖洗、使用陰道塞劑、潤滑劑或殺精劑等，以免影響判讀準確度</li>
+      <li>懷孕期間仍可進行抹片檢查，但如有出血或不適，請提前告知醫師評估</li>
+    </ul>
+  </div>
+
+  <!-- 六、檢查流程 -->
+  <div class="sec">
+    <span class="sec-label">六</span>
+    <h2>檢查流程</h2>
+    <div class="step-list">
+      <div class="step-row"><div class="step-num">1</div><p>醫師使用陰道擴張器（俗稱鴨嘴）撐開陰道，觀察子宮頸</p></div>
+      <div class="step-row"><div class="step-num">2</div><p>用細胞刷或抹片棒在子宮頸表面<strong>輕柔採集細胞</strong></p></div>
+      <div class="step-row"><div class="step-num">3</div><p>傳統抹片：將細胞直接塗抹於玻片；薄層抹片：將採檢刷洗入裝有固定液的小瓶中送檢</p></div>
+      <div class="step-row"><div class="step-num">4</div><p>整個過程約<strong>數分鐘</strong>，多數人僅感覺輕微不適或些微出血，不需麻醉，檢查後可正常活動</p></div>
+    </div>
+    <div class="note-box">
+      <span class="icon">⏰</span>
+      <span>報告通常需要 <strong>2～3 週</strong>才能取得，請務必依醫療院所安排回診領取或查詢報告，不要因為沒有不適症狀就忽略回診。</span>
+    </div>
+  </div>
+
+  <!-- 七、結果判讀 -->
+  <div class="sec">
+    <span class="sec-label">七</span>
+    <h2>結果判讀與異常追蹤</h2>
+    <div class="result-grid">
+      <div class="result-item normal">
+        <span class="badge">正常</span>
+        <div class="content"><p>未發現異常細胞，依建議年齡與頻率持續定期篩檢即可。</p></div>
+      </div>
+      <div class="result-item mild">
+        <span class="badge">發炎／輕微異常</span>
+        <div class="content"><p>多與陰道感染或停經後萎縮有關，醫師會視情況給予藥物治療，通常 3～6 個月後再追蹤即可。</p></div>
+      </div>
+      <div class="result-item mod">
+        <span class="badge">ASC-US／LSIL</span>
+        <div class="content"><p>非典型鱗狀細胞或低度鱗狀上皮內病變，多與 HPV 感染相關，部分可能自行消退，醫師可能安排加做 HPV 檢測或於 6 個月至 1 年內密切追蹤。</p></div>
+      </div>
+      <div class="result-item high">
+        <span class="badge">HSIL 或以上</span>
+        <div class="content"><p>高度鱗狀上皮內病變，屬較高風險的癌前病變，醫師會安排進一步陰道鏡檢查與切片，以確認診斷並及早治療。</p></div>
+      </div>
+    </div>
+    <div class="info-box">
+      抹片結果異常<strong>不等於罹癌</strong>。多數異常屬於發炎或低度病變，經追蹤或簡單治療即可改善。重點是務必依醫師建議按時回診複檢，切勿因害怕而拖延。
+    </div>
+  </div>
+
+  <!-- 八、常見問答 -->
+  <div class="sec">
+    <span class="sec-label">八</span>
+    <h2>常見問答</h2>
+    <div class="qa-list">
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q1</span>打過 HPV 疫苗，還需要做抹片檢查嗎？</div>
+        <div class="qa-a">需要。疫苗無法涵蓋所有致癌型別，也無法治療接種前已存在的感染，接種疫苗後仍應依建議定期做抹片檢查，才能達到完整防護。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q2</span>薄層抹片比較貴，一定要做嗎？</div>
+        <div class="qa-a">不一定。傳統抹片搭配定期篩檢，已能有效降低子宮頸癌風險。薄層抹片準確度較高、可同時加做 HPV 分子檢測，屬自費的加強選項，可依個人風險因子（如抹片曾有異常紀錄）與經濟狀況，與醫師討論是否加做。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q3</span>沒有性經驗需要做抹片檢查嗎？</div>
+        <div class="qa-a">HPV 主要透過性接觸傳染，若完全沒有性經驗，感染與致病風險極低，一般建議待有性經驗後再開始篩檢；實際仍建議諮詢醫師依個人狀況評估。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q4</span>停經後還需要做抹片檢查嗎？</div>
+        <div class="qa-a">需要。停經並不代表子宮頸癌風險消失，只要子宮頸仍在（未曾全子宮切除），仍建議依醫師建議持續定期篩檢。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q5</span>25 歲以前有過性經驗，需要做抹片嗎？</div>
+        <div class="qa-a">不一定要急著做，但可依個人風險評估。台灣臨床上不少醫師建議有性經驗後即可開始篩檢，部分縣市也提供 25 歲以下、有性經驗且設籍當地者的公費抹片。但國際實證趨勢已改為建議 25 歲才開始篩檢，因為年輕族群的 HPV 感染多數會自行清除，過早篩檢容易增加不必要的追蹤與治療。若無多重性伴侶、免疫低下等風險因子，可與醫師討論後決定。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q6</span>抹片正常、HPV 也正常，還需要繼續做嗎？</div>
+        <div class="qa-a">還是需要，只是間隔可以拉長。若抹片與 HPV 合併篩檢（co-testing）皆為陰性，且過去無異常紀錄，篩檢間隔可延長至每 5 年一次。但這是<strong>「延長間隔」，不是「終身免篩檢」</strong>。台灣公費補助目前仍以年度或 3 年為週期，若想採用 5 年間隔，建議與醫師討論個人風險後再決定。</div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q"><span class="q-badge">Q7</span>子宮全切除後還需要做抹片檢查嗎？</div>
+        <div class="qa-a">要看切除原因與是否保留子宮頸。若因良性疾病（如肌瘤）切除全子宮（子宮體與子宮頸都切除），且過去無癌前病變或癌症病史，一般可不用再做抹片。若因子宮頸癌或癌前病變而切除子宮，仍需做「陰道頂抹片」追蹤陰道殘端。若只切除子宮體、保留子宮頸（子宮次全切除），子宮頸仍在，仍需定期做抹片。<strong>實際情況請直接詢問手術醫師評估。</strong></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ref-block">
+    <h4>📋 資料來源</h4>
+    <p>衛生福利部國民健康署等公開衛教資訊。本文為一般衛教資訊整理，實際補助資格、檢查項目與追蹤方式可能隨政策與個人狀況調整，請務必諮詢醫師或洽詢當地衛生所／醫療院所取得最新建議。</p>
+    <p style="margin-top:8px;">資料整理日期：2026年8月</p>
+  </div>
+
+  <div class="cta-block">
+    <h3>想預約抹片檢查或有篩檢結果的疑問？</h3>
+    <p>歡迎透過 LINE 與葉醫師預約門診，依個人狀況提供最合適的篩檢與追蹤建議。</p>
+    <a href="https://lin.ee/nmSll8Y" class="line-btn" target="_blank" rel="noopener">💬 加 LINE 諮詢預約</a>
+  </div>
+
+  <a href="index.html" class="back-link">← 回衛教專欄列表</a>
+
+</div>
+</article>
+
+<footer>
+  <div class="foot-inner">
+    <p style="margin-bottom:8px;color:#fff;font-weight:600;">葉建麟 醫師・婦女泌尿次專科</p>
+    <p>看診地點：四季台安醫院・岡山高醫　｜　<a href="https://lin.ee/nmSll8Y" style="color:#8fc7f0;" target="_blank">LINE 線上諮詢</a></p>
+    <div class="foot-bottom">
+      本文內容僅供衛教參考，實際診療請洽專業醫師評估。<br>
+      © 2026 葉建麟醫師．All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
